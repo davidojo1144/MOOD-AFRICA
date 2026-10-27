@@ -241,7 +241,7 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
         {/* Operational Metrics Cards */}
         <View className="mt-3 flex-row gap-2">
           {/* Total Records */}
-          <View className="flex-1 rounded-xl border border-slate-200 bg-slate-50/70 p-2.5">
+          <View className="flex-1 rounded-xl border border-slate-200 bg-slate-50 p-2.5">
             <Text className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
               Captured
             </Text>
@@ -252,9 +252,7 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
           {/* Pending Sync Card */}
           <View
             className={`flex-1 rounded-xl border p-2.5 ${
-              pendingCount > 0
-                ? 'border-amber-300 bg-amber-50/70'
-                : 'border-slate-200 bg-slate-50/70'
+              pendingCount > 0 ? 'border-amber-300 bg-amber-50' : 'border-slate-200 bg-slate-50'
             }`}>
             <Text
               className={`text-[10px] font-bold uppercase tracking-wider ${
@@ -282,9 +280,7 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
           {/* Needs Attention Card */}
           <View
             className={`flex-1 rounded-xl border p-2.5 ${
-              attentionCount > 0
-                ? 'border-rose-300 bg-rose-50/70'
-                : 'border-slate-200 bg-slate-50/70'
+              attentionCount > 0 ? 'border-rose-300 bg-rose-50' : 'border-slate-200 bg-slate-50'
             }`}>
             <Text
               className={`text-[10px] font-bold uppercase tracking-wider ${
@@ -311,20 +307,22 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
         </View>
 
         {/* Sync Trigger Action Bar */}
-        <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-200 bg-slate-100/70 px-3 py-2">
-          <View className="flex-row items-center gap-2">
-            <RefreshCw
-              size={14}
-              color={isOfflineMode ? '#D97706' : '#059669'}
-              className={isSyncing ? 'animate-spin' : ''}
-            />
-            <Text className="text-xs font-semibold text-slate-700">
-              {isOfflineMode
-                ? 'Offline Queue Active (Airplane Mode)'
-                : pendingCount > 0
-                  ? `${pendingCount} record${pendingCount > 1 ? 's' : ''} ready to sync`
-                  : 'Outbox up to date'}
-            </Text>
+        <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-200 bg-slate-100 px-3 py-2">
+          <View className="flex-1 pr-2">
+            <View className="flex-row items-center gap-2">
+              <RefreshCw
+                size={14}
+                color={isOfflineMode ? '#D97706' : '#059669'}
+                className={isSyncing ? 'animate-spin' : ''}
+              />
+              <Text className="text-xs font-semibold text-slate-700">
+                {isOfflineMode
+                  ? 'Offline Queue Active (Airplane Mode)'
+                  : pendingCount > 0
+                    ? `${pendingCount} record${pendingCount > 1 ? 's' : ''} ready to sync`
+                    : 'Outbox up to date'}
+              </Text>
+            </View>
           </View>
 
           <TouchableOpacity
@@ -348,7 +346,7 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
 
         {/* Sync Error State Banner (Dismissable & Retryable) */}
         {syncError ? (
-          <View className="mt-2.5 flex-row items-center justify-between rounded-xl border border-rose-200 bg-rose-50/90 p-2.5">
+          <View className="mt-2.5 flex-row items-center justify-between rounded-xl border border-rose-200 bg-rose-50 p-2.5">
             <View className="flex-1 flex-row items-center gap-2 pr-2">
               <AlertCircle size={15} color="#E11D48" />
               <Text className="text-xs font-semibold text-rose-800">{syncError}</Text>
@@ -518,9 +516,9 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
                 key={item.record_id}
                 activeOpacity={0.7}
                 onPress={() => onEditRecord(item)}
-                className={`shadow-xs mb-3.5 rounded-2xl border bg-white p-4 transition-all ${
+                className={`shadow-xs mb-3.5 rounded-2xl border bg-white p-4 ${
                   isNeedAttention
-                    ? 'border-rose-300 bg-rose-50/20'
+                    ? 'border-rose-300 bg-rose-50'
                     : isPending
                       ? 'border-amber-200'
                       : 'border-slate-200'
@@ -575,9 +573,9 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
                 </View>
 
                 {/* Bioassay Strip */}
-                <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-100 bg-slate-50/80 p-3">
+                <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-100 bg-slate-50 p-3">
                   <View className="flex-row items-center gap-2">
-                    <View className="h-8 w-8 items-center justify-center rounded-lg bg-emerald-100/60">
+                    <View className="h-8 w-8 items-center justify-center rounded-lg bg-emerald-100">
                       <Bug size={16} color="#059669" />
                     </View>
                     <View>

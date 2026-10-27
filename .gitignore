@@ -46,3 +46,7 @@ example
 .env
 .env.*
 !.env.example
+
+# Candidate personal demo script
+docs/DEMO_WALKTHROUGH_SCRIPT.md
+

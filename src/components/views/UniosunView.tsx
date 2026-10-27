@@ -173,7 +173,7 @@ export function UniosunView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'ALERT'
                 ? 'border-rose-400 bg-rose-500 text-white'
-                : 'border-rose-200 bg-rose-50/70'
+                : 'border-rose-200 bg-rose-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -205,7 +205,7 @@ export function UniosunView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WARNING'
                 ? 'border-amber-400 bg-amber-500 text-white'
-                : 'border-amber-200 bg-amber-50/70'
+                : 'border-amber-200 bg-amber-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -237,7 +237,7 @@ export function UniosunView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WATCH'
                 ? 'border-blue-400 bg-blue-500 text-white'
-                : 'border-blue-200 bg-blue-50/70'
+                : 'border-blue-200 bg-blue-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -264,7 +264,7 @@ export function UniosunView() {
         </View>
 
         {/* Search Bar */}
-        <View className="mt-3 flex-row items-center rounded-xl border border-slate-200 bg-slate-100/70 px-3 py-1.5">
+        <View className="mt-3 flex-row items-center rounded-xl border border-slate-200 bg-slate-100 px-3 py-1.5">
           <Search size={14} color="#64748B" />
           <TextInput
             value={searchQuery}
@@ -328,20 +328,18 @@ export function UniosunView() {
               activeOpacity={0.8}
               onPress={() => setSelectedState(selectedState === sb.state ? 'All' : sb.state)}
               className={`shadow-xs flex-1 rounded-2xl border bg-white p-3 ${
-                selectedState === sb.state
-                  ? 'border-indigo-500 bg-indigo-50/20'
-                  : 'border-slate-200'
+                selectedState === sb.state ? 'border-indigo-500 bg-indigo-50' : 'border-slate-200'
               }`}>
               <Text className="text-xs font-black text-slate-900">{sb.state}</Text>
               <Text className="text-[10px] font-medium text-slate-500">{sb.total} alerts</Text>
               <View className="mt-2 flex-row gap-1">
-                <View className="py-0.2 rounded bg-rose-100 px-1">
+                <View className="rounded bg-rose-100 px-1 py-0.5">
                   <Text className="text-[9px] font-extrabold text-rose-800">{sb.alert}</Text>
                 </View>
-                <View className="py-0.2 rounded bg-amber-100 px-1">
+                <View className="rounded bg-amber-100 px-1 py-0.5">
                   <Text className="text-[9px] font-extrabold text-amber-800">{sb.warning}</Text>
                 </View>
-                <View className="py-0.2 rounded bg-blue-100 px-1">
+                <View className="rounded bg-blue-100 px-1 py-0.5">
                   <Text className="text-[9px] font-extrabold text-blue-800">{sb.watch}</Text>
                 </View>
               </View>

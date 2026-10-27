@@ -153,7 +153,7 @@ export function VecdimView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'ALERT'
                 ? 'border-rose-400 bg-rose-500 text-white'
-                : 'border-rose-200 bg-rose-50/70'
+                : 'border-rose-200 bg-rose-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -185,7 +185,7 @@ export function VecdimView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WARNING'
                 ? 'border-amber-400 bg-amber-500 text-white'
-                : 'border-amber-200 bg-amber-50/70'
+                : 'border-amber-200 bg-amber-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -217,7 +217,7 @@ export function VecdimView() {
             className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WATCH'
                 ? 'border-blue-400 bg-blue-500 text-white'
-                : 'border-blue-200 bg-blue-50/70'
+                : 'border-blue-200 bg-blue-50'
             }`}>
             <View className="flex-row items-center justify-between">
               <Text
@@ -405,7 +405,7 @@ export function VecdimView() {
                 </View>
 
                 {/* Risk Probability & Pyrethroid Indicator */}
-                <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-100 bg-slate-50/80 p-3">
+                <View className="mt-3 flex-row items-center justify-between rounded-xl border border-slate-100 bg-slate-50 p-3">
                   <View>
                     <Text className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
                       Random Forest Risk

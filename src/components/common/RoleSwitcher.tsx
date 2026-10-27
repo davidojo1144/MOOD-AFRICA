@@ -11,41 +11,48 @@ interface RoleSwitcherProps {
   compact?: boolean;
 }
 
-export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: RoleSwitcherProps) {
+export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitcherProps) {
   const { currentUser, setCurrentUser } = useRecordsStore();
   const [modalVisible, setModalVisible] = useState(false);
+
+  const renderRoleIcon = (role: string, size = 16, color = '#475569') => {
+    switch (role) {
+      case 'uniosun':
+        return <Building2 size={size} color={color} />;
+      case 'vecdim':
+        return <Shield size={size} color={color} />;
+      default:
+        return <User size={size} color={color} />;
+    }
+  };
 
   const getRoleTheme = (role: string) => {
     switch (role) {
       case 'uniosun':
         return {
-          bg: 'bg-indigo-500/10',
-          border: 'border-indigo-500/30',
-          text: 'text-indigo-600',
-          badge: 'bg-indigo-600 text-white',
-          Icon: Building2,
+          bg: 'bg-indigo-50',
+          border: 'border-indigo-200',
+          badgeBg: 'bg-indigo-600',
+          badgeText: 'text-white',
         };
       case 'vecdim':
         return {
-          bg: 'bg-blue-500/10',
-          border: 'border-blue-500/30',
-          text: 'text-blue-600',
-          badge: 'bg-blue-600 text-white',
-          Icon: Shield,
+          bg: 'bg-blue-50',
+          border: 'border-blue-200',
+          badgeBg: 'bg-blue-600',
+          badgeText: 'text-white',
         };
       default:
         return {
-          bg: 'bg-emerald-500/10',
-          border: 'border-emerald-500/30',
-          text: 'text-emerald-600',
-          badge: 'bg-emerald-600 text-white',
-          Icon: User,
+          bg: 'bg-emerald-50',
+          border: 'border-emerald-200',
+          badgeBg: 'bg-emerald-600',
+          badgeText: 'text-white',
         };
     }
   };
 
-  const theme = getRoleTheme(currentUser.role);
-  const RoleIcon = theme.Icon;
+  const currentTheme = getRoleTheme(currentUser.role);
 
   return (
     <>
@@ -57,7 +64,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
             activeOpacity={0.8}
             onPress={onToggleOfflineMode}
             className={`flex-row items-center rounded-full border px-2.5 py-1.5 shadow-sm ${
-              isOfflineMode ? 'border-amber-400 bg-amber-50' : 'border-emerald-300 bg-emerald-50/80'
+              isOfflineMode ? 'border-amber-400 bg-amber-50' : 'border-emerald-300 bg-emerald-50'
             }`}>
             {isOfflineMode ? (
               <WifiOff size={13} color="#D97706" />
@@ -77,7 +84,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => setModalVisible(true)}
-          className={`flex-row items-center rounded-full border px-2.5 py-1.5 shadow-sm ${theme.bg} ${theme.border}`}>
+          className={`flex-row items-center rounded-full border px-2.5 py-1.5 shadow-sm ${currentTheme.bg} ${currentTheme.border}`}>
           <View className="mr-1.5 h-5 w-5 items-center justify-center rounded-full bg-slate-900">
             <Text className="text-[10px] font-extrabold text-white">
               {currentUser.name
@@ -92,8 +99,9 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
               {currentUser.name.split(' ')[0]}
             </Text>
           </View>
-          <View className={`rounded-full px-1.5 py-0.5 ${theme.badge}`}>
-            <Text className="text-[9px] font-extrabold uppercase tracking-wide">
+          <View className={`rounded-full px-1.5 py-0.5 ${currentTheme.badgeBg}`}>
+            <Text
+              className={`text-[9px] font-extrabold uppercase tracking-wide ${currentTheme.badgeText}`}>
               {currentUser.role}
             </Text>
           </View>
@@ -103,12 +111,14 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
 
       {/* Role Picker Modal */}
       <Modal visible={modalVisible} transparent animationType="fade">
-        <View className="flex-1 items-center justify-center bg-slate-950/70 px-4">
+        <View
+          style={{ backgroundColor: 'rgba(15, 23, 42, 0.7)' }}
+          className="flex-1 items-center justify-center px-4">
           <View
             style={{ maxHeight: '85%' }}
             className="w-full max-w-md overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
             {/* Modal Header */}
-            <View className="border-b border-slate-100 bg-slate-50/80 px-6 py-4">
+            <View className="border-b border-slate-100 bg-slate-50 px-6 py-4">
               <View className="flex-row items-center justify-between">
                 <View>
                   <Text className="text-base font-extrabold text-slate-900">
@@ -119,7 +129,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                   </Text>
                 </View>
                 <View className="h-8 w-8 items-center justify-center rounded-full bg-slate-200">
-                  <RoleIcon size={16} color="#0F172A" />
+                  {renderRoleIcon(currentUser.role, 16, '#0F172A')}
                 </View>
               </View>
             </View>
@@ -130,7 +140,6 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                 {DEMO_USERS.map((user: UserProfile) => {
                   const isSelected = user.user_id === currentUser.user_id;
                   const itemTheme = getRoleTheme(user.role);
-                  const ItemIcon = itemTheme.Icon;
 
                   return (
                     <TouchableOpacity
@@ -140,9 +149,9 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                         void setCurrentUser(user);
                         setModalVisible(false);
                       }}
-                      className={`flex-row items-center justify-between rounded-2xl border p-3.5 transition-all ${
+                      className={`flex-row items-center justify-between rounded-2xl border p-3.5 ${
                         isSelected
-                          ? 'border-emerald-500 bg-emerald-50/40 shadow-sm'
+                          ? 'border-emerald-500 bg-emerald-50 shadow-sm'
                           : 'border-slate-200 bg-white'
                       }`}>
                       <View className="flex-1 flex-row items-center pr-2">
@@ -150,7 +159,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                           className={`mr-3 h-10 w-10 items-center justify-center rounded-xl ${
                             isSelected ? 'bg-emerald-600' : 'bg-slate-100'
                           }`}>
-                          <ItemIcon size={18} color={isSelected ? '#FFFFFF' : '#475569'} />
+                          {renderRoleIcon(user.role, 18, isSelected ? '#FFFFFF' : '#475569')}
                         </View>
                         <View className="flex-1">
                           <View className="flex-row items-center gap-1.5">
@@ -161,7 +170,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                               {user.name}
                             </Text>
                             {isSelected && (
-                              <View className="py-0.2 rounded-full bg-emerald-100 px-1.5">
+                              <View className="rounded-full bg-emerald-100 px-1.5 py-0.5">
                                 <Text className="text-[9px] font-bold text-emerald-800">
                                   ACTIVE
                                 </Text>
@@ -176,8 +185,11 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode, compact }: Ro
                       </View>
 
                       <View className="items-end gap-1">
-                        <View className={`rounded-full px-2 py-0.5 ${itemTheme.badge}`}>
-                          <Text className="text-[9px] font-extrabold uppercase">{user.role}</Text>
+                        <View className={`rounded-full px-2 py-0.5 ${itemTheme.badgeBg}`}>
+                          <Text
+                            className={`text-[9px] font-extrabold uppercase ${itemTheme.badgeText}`}>
+                            {user.role}
+                          </Text>
                         </View>
                         {isSelected && <Check size={14} color="#059669" />}
                       </View>

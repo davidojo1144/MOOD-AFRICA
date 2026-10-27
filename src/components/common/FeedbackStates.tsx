@@ -35,7 +35,7 @@ export function EmptyState({
       case 'emerald':
         return {
           border: 'border-emerald-200',
-          bg: 'bg-emerald-50/30',
+          bg: 'bg-emerald-50',
           iconBg: 'bg-emerald-100',
           iconColor: '#059669',
           btnBg: 'bg-emerald-600 active:bg-emerald-700',
@@ -43,7 +43,7 @@ export function EmptyState({
       case 'amber':
         return {
           border: 'border-amber-200',
-          bg: 'bg-amber-50/30',
+          bg: 'bg-amber-50',
           iconBg: 'bg-amber-100',
           iconColor: '#D97706',
           btnBg: 'bg-amber-600 active:bg-amber-700',
@@ -51,7 +51,7 @@ export function EmptyState({
       case 'rose':
         return {
           border: 'border-rose-200',
-          bg: 'bg-rose-50/30',
+          bg: 'bg-rose-50',
           iconBg: 'bg-rose-100',
           iconColor: '#E11D48',
           btnBg: 'bg-rose-600 active:bg-rose-700',
@@ -59,7 +59,7 @@ export function EmptyState({
       case 'blue':
         return {
           border: 'border-blue-200',
-          bg: 'bg-blue-50/30',
+          bg: 'bg-blue-50',
           iconBg: 'bg-blue-100',
           iconColor: '#2563EB',
           btnBg: 'bg-blue-600 active:bg-blue-700',
@@ -145,7 +145,7 @@ export function ErrorState({
   return (
     <View
       className={`shadow-xs items-center justify-center rounded-3xl border ${
-        isRose ? 'border-rose-200 bg-rose-50/50' : 'border-amber-200 bg-amber-50/50'
+        isRose ? 'border-rose-200 bg-rose-50' : 'border-amber-200 bg-amber-50'
       } p-7`}>
       <View
         className={`mb-3 h-14 w-14 items-center justify-center rounded-2xl ${
