@@ -12,7 +12,7 @@ import {
 import { AlertTierItem, StateName } from '@/types/vecdim';
 import { useRecordsStore } from '@/store/recordsStore';
 import { STATE_LGAS } from '@/services/validation/constants';
-import { db } from '../../../backend/db';
+import { AlertsClientService } from '@/services/api/alertsService';
 
 export function VecdimView() {
   const { currentUser } = useRecordsStore();
@@ -31,7 +31,7 @@ export function VecdimView() {
 
   useEffect(() => {
     let isMounted = true;
-    db.getAlerts({
+    AlertsClientService.getAlerts({
       userRole: 'vecdim',
       userState: state,
       state,
@@ -67,7 +67,7 @@ export function VecdimView() {
   const handleAcknowledge = async () => {
     if (!ackModalItem) return;
     setIsSubmittingAck(true);
-    await db.acknowledgeAlert(ackModalItem.id, currentUser.user_id, ackNotes);
+    await AlertsClientService.acknowledgeAlert(ackModalItem.id, currentUser.user_id, ackNotes);
     setIsSubmittingAck(false);
     setAckModalItem(null);
     setAckNotes('');

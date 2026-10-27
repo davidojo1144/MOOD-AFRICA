@@ -1,5 +1,7 @@
 # VECDIM Mobile Application & Backend
+
 ### Osun State University (UNIOSUN) — Geosmart Nigeria / MOOD Africa Project
+
 **Technical Assessment Submission — Lead Developer (Mobile App & Backend)**  
 **Candidate:** Ojo David Ayodeji  
 **Target Submission:** October 28, 2026
@@ -11,6 +13,7 @@
 This repository contains the production-ready, offline-first mobile application and PostGIS backend for the **Vector-Borne Disease Information System (VECDIM)**. The solution captures entomological surveillance data in low- or zero-connectivity field conditions across Nigeria, guarantees **100.0000% deterministic validation parity** with UNIOSUN's existing R analytical pipeline, handles network interruptions gracefully with idempotent micro-batch synchronization, and delivers role-scoped operational dashboards for Field Entomologists, VECDIM State Officers, and UNIOSUN National Researchers.
 
 ### Key Capabilities Built & Verified
+
 1. **Offline-First Mobile Capture (Expo SDK 58 + React Native):**
    - Field entomology capture form adhering to `docs/field_form_spec.md`.
    - Live GPS accuracy meter with color-coded operational states: Target ($\le 10\text{ m}$), Warning ($10\text{--}50\text{ m}$), Unusable Block ($> 50\text{ m}$).
@@ -40,6 +43,7 @@ This repository contains the production-ready, offline-first mobile application 
 The system is configured so examiners can evaluate the full stack with minimal setup.
 
 ### Option A: Standalone Quick Start (Zero External Dependencies)
+
 Runs the backend in embedded persistent mode (no PostgreSQL installation required) alongside the mobile application:
 
 ```bash
@@ -55,11 +59,13 @@ npm run server
 # 4. In a separate terminal, start the Expo mobile app
 npx expo start
 ```
-*Press `w` in the Expo terminal to open in web browser, or scan the QR code with Expo Go on iOS / Android.*
+
+_Press `w` in the Expo terminal to open in web browser, or scan the QR code with Expo Go on iOS / Android._
 
 ---
 
 ### Option B: Full PostGIS & Docker Compose Stack
+
 Runs the production PostgreSQL 16 container with PostGIS extensions and the Express API:
 
 ```bash
@@ -79,20 +85,21 @@ npx expo start
 
 Every component has automated test coverage verifying mathematical thresholds, R parity, and API contracts:
 
-| Command | Target | Verification Criteria |
-|---|---|---|
-| `npm run test:unit` | WHO & GPS Unit Tests | 89.9% (Resistant), 90.0% (Possible), 97.9% (Possible), 98.0% (Susceptible); GPS meters (10m, 10.1m, 50m, 50.1m); LGA far warning. |
-| `npm run test:parity` | R Pipeline Parity Runner | Evaluates 1,525 rows against `validation_flags_all.csv` across all 11 rules. Requires **100.00% parity**. |
-| `npm run test:sync` | Sync & Backend API Tests | Verifies 647 alerts (86 ALERT, 135 WARNING, 426 WATCH), idempotent re-seeding, duplicate upload idempotency, partial failure isolation (9 valid, 1 bad), resubmission under same `record_id`, role scoping, and alert acknowledgment. |
-| `npm test` | Complete Test Suite | Executes all 3 test suites in sequence. |
-| `npm run typecheck` | TypeScript Strict Check | `tsc --noEmit` verifies strict types across all mobile and backend code. |
-| `npm run lint` | ESLint Cleanliness | `expo lint` verifies React Native / Expo best practices and hook rules. |
+| Command               | Target                   | Verification Criteria                                                                                                                                                                                                                 |
+| --------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run test:unit`   | WHO & GPS Unit Tests     | 89.9% (Resistant), 90.0% (Possible), 97.9% (Possible), 98.0% (Susceptible); GPS meters (10m, 10.1m, 50m, 50.1m); LGA far warning.                                                                                                     |
+| `npm run test:parity` | R Pipeline Parity Runner | Evaluates 1,525 rows against `validation_flags_all.csv` across all 11 rules. Requires **100.00% parity**.                                                                                                                             |
+| `npm run test:sync`   | Sync & Backend API Tests | Verifies 647 alerts (86 ALERT, 135 WARNING, 426 WATCH), idempotent re-seeding, duplicate upload idempotency, partial failure isolation (9 valid, 1 bad), resubmission under same `record_id`, role scoping, and alert acknowledgment. |
+| `npm test`            | Complete Test Suite      | Executes all 3 test suites in sequence.                                                                                                                                                                                               |
+| `npm run typecheck`   | TypeScript Strict Check  | `tsc --noEmit` verifies strict types across all mobile and backend code.                                                                                                                                                              |
+| `npm run lint`        | ESLint Cleanliness       | `expo lint` verifies React Native / Expo best practices and hook rules.                                                                                                                                                               |
 
 ---
 
 ## Why This Backend? (Architectural Defense)
 
 ### 1. Integration with Existing R Analytical Pipeline
+
 The VECDIM predictive modelling pipeline currently relies on R scripts (`01_clean_and_validate.R`, `02_spatial_features.R`, `03_rf_model_and_alerts.R`) that process CSV files, train Random Forest classifiers, and output risk alerts. Our Node.js/PostGIS backend integrates with this workflow without requiring researchers to rewrite their statistical models:
 
 - **Direct Ingestion of R Outputs:** The backend ingestion engine directly parses `VECDIM_Candidate_Pack/outputs/alerts.csv` and `risk_predictions.csv`. On startup or scheduled sync, alerts are loaded into the `alerts` table with their exact calculated probabilities (`rf_prob`), risk tiers (`ALERT`, `WARNING`, `WATCH`), and independent insecticide resistance flags.
@@ -103,15 +110,17 @@ The VECDIM predictive modelling pipeline currently relies on R scripts (`01_clea
 ---
 
 ### 2. Supporting Future Modelling Work
+
 Surveillance needs evolve as disease control programs mature. The backend data model and infrastructure are architected for agile expansion:
 
 - **Model Retraining & Artifact Versioning:** The `alerts` table stores `model_version`, `model_type` ('rf_v1_malaria'), and the raw probability score `rf_prob` alongside categorical risk tiers. When new models are trained, historical alerts remain tagged with the model version that generated them, providing an auditable temporal record of risk evolution and false-alarm retrospectives.
 - **Dynamic Spatial Covariates (ERA5, GADM, WorldPop):** By leveraging PostGIS `GEOMETRY(Point, 4326)` for every field record, the backend natively supports spatial joins with raster and vector environmental layers. When future models require satellite-derived covariates (e.g. enhanced vegetation index [EVI], 10-day cumulative precipitation from ERA5-Land, or distance to water bodies), PostGIS spatial functions (`ST_Intersects`, `ST_Distance`) compute these covariates directly in the database before passing feature vectors to the model.
-- **Extensible NTD (Neglected Tropical Diseases) Module:** The backend schema incorporates a JSONB `additional_covariates` column and normalized disease module interfaces. Extending the system from malaria vectors (*Anopheles*) to lymphatic filariasis (*Culex*), onchocerciasis (*Simulium damnosum*), or schistosomiasis (*Biomphalaria* snail hosts) requires no breaking database migrations. New vector-specific metrics (e.g. blackfly biting density, microfilariae load) are ingested seamlessly under the existing sync engine.
+- **Extensible NTD (Neglected Tropical Diseases) Module:** The backend schema incorporates a JSONB `additional_covariates` column and normalized disease module interfaces. Extending the system from malaria vectors (_Anopheles_) to lymphatic filariasis (_Culex_), onchocerciasis (_Simulium damnosum_), or schistosomiasis (_Biomphalaria_ snail hosts) requires no breaking database migrations. New vector-specific metrics (e.g. blackfly biting density, microfilariae load) are ingested seamlessly under the existing sync engine.
 
 ---
 
 ### 3. Scaling to 10,000 Field Workers and Many LGAs
+
 A national vector control deployment across all 774 LGAs in Nigeria requires an architecture resilient to traffic spikes, intermittent rural connectivity, and high-concurrency spatial queries:
 
 - **Micro-Batch Ingestion & Idempotent Upsert:** Field devices accumulate records offline and sync in micro-batches (5--50 records). The backend endpoint (`POST /api/v1/records/batch`) validates each record in memory, generates an execution plan, and executes batch upserts using `ON CONFLICT (record_id) DO NOTHING`. This guarantees $O(1)$ duplicate elimination and prevents deadlocks during network retry storms.
@@ -126,6 +135,7 @@ A national vector control deployment across all 774 LGAs in Nigeria requires an 
 ---
 
 ### 4. Maintainability for a Small Team
+
 Academic and public-health institutions have lean technical staff who cannot maintain complex distributed systems. This design emphasizes operational simplicity, strict typing, and low cognitive overhead:
 
 - **End-to-End TypeScript Type Safety:** Both the React Native client and Express backend share the same TypeScript domain definitions (`src/types/vecdim.ts`). Changes to field names, validation error schemas, or sync payload structures are caught at compile-time by `tsc --noEmit`, eliminating entire classes of serialization and payload mismatches.
@@ -214,6 +224,7 @@ erDiagram
 ```
 
 ### PostGIS Column Details & Spatial Index Design
+
 - **Spatial Column:** `location geometry(Point, 4326)` in `field_records` and `risk_points`. Automatically populated on `INSERT` via:
   ```sql
   ST_SetSRID(ST_MakePoint(longitude, latitude), 4326)
@@ -230,16 +241,17 @@ erDiagram
 
 To support national reporting to the Federal Ministry of Health, the UNIOSUN view includes a one-tap DHIS2 export generator conforming to the DHIS2 Aggregate Data Value Set specification:
 
-| VECDIM Entity / Metric | DHIS2 Target Element | Data Element ID | Category Option Combo |
-|---|---|---|---|
-| Monthly Surveillance Submission | VECDIM_MALARIA_RECORDS | `VEC_MAL_001` | Default |
-| Number of Exposed Mosquitoes | VEC_BIOASSAY_N_EXPOSED | `VEC_EXP_002` | `H01` (Permethrin) / `H02` (Deltamethrin) |
-| Number of Dead Mosquitoes | VEC_BIOASSAY_N_DEAD | `VEC_DED_003` | `H01` (Permethrin) / `H02` (Deltamethrin) |
-| Larval Density Category (1--5) | VEC_LARVAL_DENSITY | `VEC_LRV_004` | Default |
-| WHO Bioassay Resistant (< 90%) | VEC_RESISTANT_FLAG | `VEC_RES_005` | Pyrethroid Resistance |
-| High Risk Alert Flag ($\ge 0.70$) | VEC_EPIDEMIC_ALERT | `VEC_ALT_006` | Epidemic Threshold |
+| VECDIM Entity / Metric            | DHIS2 Target Element   | Data Element ID | Category Option Combo                     |
+| --------------------------------- | ---------------------- | --------------- | ----------------------------------------- |
+| Monthly Surveillance Submission   | VECDIM_MALARIA_RECORDS | `VEC_MAL_001`   | Default                                   |
+| Number of Exposed Mosquitoes      | VEC_BIOASSAY_N_EXPOSED | `VEC_EXP_002`   | `H01` (Permethrin) / `H02` (Deltamethrin) |
+| Number of Dead Mosquitoes         | VEC_BIOASSAY_N_DEAD    | `VEC_DED_003`   | `H01` (Permethrin) / `H02` (Deltamethrin) |
+| Larval Density Category (1--5)    | VEC_LARVAL_DENSITY     | `VEC_LRV_004`   | Default                                   |
+| WHO Bioassay Resistant (< 90%)    | VEC_RESISTANT_FLAG     | `VEC_RES_005`   | Pyrethroid Resistance                     |
+| High Risk Alert Flag ($\ge 0.70$) | VEC_EPIDEMIC_ALERT     | `VEC_ALT_006`   | Epidemic Threshold                        |
 
 Export payloads are formatted directly for DHIS2 REST ingestion:
+
 ```json
 {
   "dataSet": "pB2kJHj7yZ1",
@@ -260,23 +272,24 @@ Export payloads are formatted directly for DHIS2 REST ingestion:
 
 Our validation engine implements all 11 business rules defined in `docs/validation_rules.md` and `R/helpers.R`. It runs identically on the client (for immediate form feedback) and server (for gatekeeping integrity):
 
-| Rule Code | Rule Description | Threshold / Condition | Device Action | Server Action |
-|---|---|---|---|---|
-| `GPS_outside_nigeria` | Coordinates outside Nigeria | Lat $\notin [4.0, 14.5]$ or Lon $\notin [2.5, 15.0]$ | **Block** | **Block (Reject)** |
-| `GPS_zero_zero` | Zero coordinates | $\text{lat} = 0 \land \text{lon} = 0$ (or near $\epsilon \le 0.001$) | **Block** | **Block (Reject)** |
-| `GPS_state_mismatch` | Coords outside State bounding box | Lat/Lon outside State min/max bbox | **Block** | **Block (Reject)** |
-| `GPS_far_from_lga` | Coords $> 25\text{ km}$ from LGA center | Haversine distance $> 25\text{ km}$ | **Warn** | **Warn (Flag)** |
-| `GPS_accuracy_unusable`| GPS accuracy worse than 50m | $\text{accuracy} > 50\text{ m}$ or missing | **Block** | **Block (Reject)** |
-| `GPS_accuracy_poor` | GPS accuracy between 10m and 50m | $10\text{ m} < \text{accuracy} \le 50\text{ m}$ | **Warn** | **Warn (Flag)** |
-| `n_dead_gt_n_exposed` | Dead count exceeds exposed count | $\text{n\_dead} > \text{n\_exposed}$ | **Block** | **Block (Reject)** |
-| `positivity_out_range`| Microscopic positivity percentage | $\text{positivity} \notin [0, 100]$ | **Block** | **Block (Reject)** |
-| `future_date` | Collection date in the future | $\text{date} > \text{current\_date}$ | **Block** | **Block (Reject)** |
-| `temp_implausible` | Ambient temperature out of range | $\text{temp} \notin [15, 45]^\circ\text{C}$ | **Warn** | **Warn (Flag)** |
-| `rainfall_implausible`| Rainfall measurement out of range | $\text{rainfall} > 500\text{ mm}$ | **Warn** | **Warn (Flag)** |
-| `duplicate` | Duplicate record in LGA & Ward | Same date, LGA, ward, species, insecticide | **Warn** | **Warn (Flag)** |
-| `missing_core` | Missing mandatory field | Missing state, lga, ward, date, coords, etc. | **Block** | **Block (Reject)** |
+| Rule Code               | Rule Description                        | Threshold / Condition                                                | Device Action | Server Action      |
+| ----------------------- | --------------------------------------- | -------------------------------------------------------------------- | ------------- | ------------------ |
+| `GPS_outside_nigeria`   | Coordinates outside Nigeria             | Lat $\notin [4.0, 14.5]$ or Lon $\notin [2.5, 15.0]$                 | **Block**     | **Block (Reject)** |
+| `GPS_zero_zero`         | Zero coordinates                        | $\text{lat} = 0 \land \text{lon} = 0$ (or near $\epsilon \le 0.001$) | **Block**     | **Block (Reject)** |
+| `GPS_state_mismatch`    | Coords outside State bounding box       | Lat/Lon outside State min/max bbox                                   | **Block**     | **Block (Reject)** |
+| `GPS_far_from_lga`      | Coords $> 25\text{ km}$ from LGA center | Haversine distance $> 25\text{ km}$                                  | **Warn**      | **Warn (Flag)**    |
+| `GPS_accuracy_unusable` | GPS accuracy worse than 50m             | $\text{accuracy} > 50\text{ m}$ or missing                           | **Block**     | **Block (Reject)** |
+| `GPS_accuracy_poor`     | GPS accuracy between 10m and 50m        | $10\text{ m} < \text{accuracy} \le 50\text{ m}$                      | **Warn**      | **Warn (Flag)**    |
+| `n_dead_gt_n_exposed`   | Dead count exceeds exposed count        | $\text{n\_dead} > \text{n\_exposed}$                                 | **Block**     | **Block (Reject)** |
+| `positivity_out_range`  | Microscopic positivity percentage       | $\text{positivity} \notin [0, 100]$                                  | **Block**     | **Block (Reject)** |
+| `future_date`           | Collection date in the future           | $\text{date} > \text{current\_date}$                                 | **Block**     | **Block (Reject)** |
+| `temp_implausible`      | Ambient temperature out of range        | $\text{temp} \notin [15, 45]^\circ\text{C}$                          | **Warn**      | **Warn (Flag)**    |
+| `rainfall_implausible`  | Rainfall measurement out of range       | $\text{rainfall} > 500\text{ mm}$                                    | **Warn**      | **Warn (Flag)**    |
+| `duplicate`             | Duplicate record in LGA & Ward          | Same date, LGA, ward, species, insecticide                           | **Warn**      | **Warn (Flag)**    |
+| `missing_core`          | Missing mandatory field                 | Missing state, lga, ward, date, coords, etc.                         | **Block**     | **Block (Reject)** |
 
 ### Parity Test Output on 1,525 Synthetic Records
+
 ```
 =====================================================
  VECDIM VALIDATION ENGINE PARITY TEST REPORT
@@ -310,12 +323,12 @@ OVERALL PARITY    : 100.0000%
 
 This script is structured to demonstrate all 4 required evaluation points within the strict 3-minute cap:
 
-| Time | Target Action | Screen / Visual State | Key Commentary / Action |
-|---|---|---|---|
-| **0:00 - 0:45** | **Offline Capture & Crash Recovery** | Entomology Form | 1. Toggle Airplane Mode / Offline in app.<br>2. Fill in state (Osun), LGA (Osogbo), exposed (100), dead (42).<br>3. Note the live WHO badge: "Resistant (42.0%)" in red.<br>4. Force-kill app or trigger crash simulator.<br>5. Reopen app: Draft recovery modal appears: *"Unsaved draft recovered from 10:42 AM"*. Tap **Resume Draft** — all form fields restored perfectly. |
-| **0:45 - 1:20** | **GPS Accuracy Meter & Distance Check** | GPS Accuracy Widget | 1. Tap **Simulate 6m**: Meter turns Green (`Target ≤ 10m`).<br>2. Tap **Simulate 18m**: Meter turns Amber (`Warning 10-50m`). Warning banner displays: *"Fair GPS accuracy. Acceptable for sync."*<br>3. Tap **Simulate 60m**: Meter turns Red (`Unusable > 50m`). Save button disables with message: *"GPS accuracy unusable (>50m). Record cannot be submitted."*<br>4. Tap **Simulate Far LGA (Osogbo in Ife Central)**: Triggers LGA distance warning: *"Coordinates are ~32.4 km from Ife Central center (>25 km threshold)."* |
-| **1:20 - 2:05** | **Safe Sync & Partial Failure Isolation** | Field View / Outbox | 1. Toggle connection back Online.<br>2. Queue a batch of 10 records where 9 are valid and 1 has `n_dead = 120` ($> \text{n\_exposed}$).<br>3. Trigger Sync. Show batch response: 9 records accepted immediately.<br>4. The 1 invalid record is marked `Rejected` and kept in the device outbox.<br>5. Tap **Fix Record**: form opens with server error highlighted: *"Number of dead mosquitoes (120) cannot exceed exposed count (100)"*.<br>6. Correct `n_dead` to 85 and tap Save. Resubmit: accepted under the exact same `record_id`. |
-| **2:05 - 3:00** | **Role Switcher: 3 Operational Views** | Top Header Role Switcher | 1. **Field View (Ojo David):** Show my records, pending sync count, and Needs-Attention list.<br>2. **VECDIM State View (Dr. Adekunle, Osun):** Switch role to VECDIM. Shows only Osun state alerts (214 alerts). Highlight pyrethroid resistance badge shown separately from risk tier. Tap **Acknowledge Alert**, enter action note: *"Vector spraying team deployed"*, alert updates immediately.<br>3. **UNIOSUN National View (Prof. Adeleke):** National overview showing exactly **86 ALERT, 135 WARNING, 426 WATCH (Total 647)**. Show state breakdown table and tap **Export DHIS2 Payload** to reveal standard JSON output. |
+| Time            | Target Action                             | Screen / Visual State    | Key Commentary / Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------- | ----------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0:00 - 0:45** | **Offline Capture & Crash Recovery**      | Entomology Form          | 1. Toggle Airplane Mode / Offline in app.<br>2. Fill in state (Osun), LGA (Osogbo), exposed (100), dead (42).<br>3. Note the live WHO badge: "Resistant (42.0%)" in red.<br>4. Force-kill app or trigger crash simulator.<br>5. Reopen app: Draft recovery modal appears: _"Unsaved draft recovered from 10:42 AM"_. Tap **Resume Draft** — all form fields restored perfectly.                                                                                                                                                                                                                                                       |
+| **0:45 - 1:20** | **GPS Accuracy Meter & Distance Check**   | GPS Accuracy Widget      | 1. Tap **Simulate 6m**: Meter turns Green (`Target ≤ 10m`).<br>2. Tap **Simulate 18m**: Meter turns Amber (`Warning 10-50m`). Warning banner displays: _"Fair GPS accuracy. Acceptable for sync."_<br>3. Tap **Simulate 60m**: Meter turns Red (`Unusable > 50m`). Save button disables with message: _"GPS accuracy unusable (>50m). Record cannot be submitted."_<br>4. Tap **Simulate Far LGA (Osogbo in Ife Central)**: Triggers LGA distance warning: _"Coordinates are ~32.4 km from Ife Central center (>25 km threshold)."_                                                                                                   |
+| **1:20 - 2:05** | **Safe Sync & Partial Failure Isolation** | Field View / Outbox      | 1. Toggle connection back Online.<br>2. Queue a batch of 10 records where 9 are valid and 1 has `n_dead = 120` ($> \text{n\_exposed}$).<br>3. Trigger Sync. Show batch response: 9 records accepted immediately.<br>4. The 1 invalid record is marked `Rejected` and kept in the device outbox.<br>5. Tap **Fix Record**: form opens with server error highlighted: _"Number of dead mosquitoes (120) cannot exceed exposed count (100)"_.<br>6. Correct `n_dead` to 85 and tap Save. Resubmit: accepted under the exact same `record_id`.                                                                                            |
+| **2:05 - 3:00** | **Role Switcher: 3 Operational Views**    | Top Header Role Switcher | 1. **Field View (Ojo David):** Show my records, pending sync count, and Needs-Attention list.<br>2. **VECDIM State View (Dr. Adekunle, Osun):** Switch role to VECDIM. Shows only Osun state alerts (214 alerts). Highlight pyrethroid resistance badge shown separately from risk tier. Tap **Acknowledge Alert**, enter action note: _"Vector spraying team deployed"_, alert updates immediately.<br>3. **UNIOSUN National View (Prof. Adeleke):** National overview showing exactly **86 ALERT, 135 WARNING, 426 WATCH (Total 647)**. Show state breakdown table and tap **Export DHIS2 Payload** to reveal standard JSON output. |
 
 ---
 
@@ -384,4 +397,4 @@ In accordance with candidate instructions, the use of AI tools during the techni
 
 ---
 
-*Submitted for evaluation to the UNIOSUN / MOOD Africa Assessment Committee.*
+_Submitted for evaluation to the UNIOSUN / MOOD Africa Assessment Committee._

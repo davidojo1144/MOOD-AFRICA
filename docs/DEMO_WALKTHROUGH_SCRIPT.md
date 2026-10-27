@@ -1,4 +1,5 @@
 # VECDIM Demo Video Recording Script (3-Minute Guide)
+
 **Target Duration:** Maximum 3 minutes (180 seconds)  
 **Presenter:** Ojo David Ayodeji — Candidate for Lead Developer (Mobile App & Backend)  
 **Audience:** UNIOSUN / VECDIM Assessment Committee
@@ -6,6 +7,7 @@
 ---
 
 ## Preparation Before Hitting Record
+
 1. Ensure the backend server is running in a terminal:
    ```bash
    npm run server
@@ -22,6 +24,7 @@
 ## Timed Walkthrough
 
 ### Part 1: Offline Data Capture & Draft Recovery (0:00 – 0:45)
+
 **Visual:** App is open on the Entomology Data Collection Form (`Field Worker: Ojo David`).
 
 - **Action:** Tap the **"Offline"** toggle on the top right (Airplane Mode simulation).
@@ -40,6 +43,7 @@
 ---
 
 ### Part 2: GPS Accuracy Meter & LGA Proximity Check (0:45 – 1:20)
+
 **Visual:** Form scrolled to the GPS Location & Accuracy Meter section.
 
 - **Action:**
@@ -58,6 +62,7 @@
 ---
 
 ### Part 3: Safe Sync Queue & Partial Failure Isolation (1:20 – 2:05)
+
 **Visual:** Switch connection back to **Online**, switch to **"Field View"** tab.
 
 - **Action:**
@@ -78,10 +83,12 @@
 ---
 
 ### Part 4: Role-Based Dashboards & DHIS2 Export (2:05 – 2:55)
+
 **Visual:** Use the **Role Switcher** in the header.
 
 - **Action 1:** Switch role to **"VECDIM State Officer (Dr. Adekunle - Osun)"**
 - **Spoken Voiceover / Caption:**
+
   > "Now let's explore our role-scoped dashboards.
   > Switching to VECDIM State Officer for Osun State: the alert feed is strictly filtered to Osun's 214 alerts.
   > Notice that pyrethroid resistance (<90% mortality) is presented as a separate indicator rather than changing the risk tier, preventing alert fatigue for officers.
@@ -95,6 +102,7 @@
   > Below, researchers can review state-by-state risk breakdowns, filter by risk tier, and click 'Export DHIS2 Payload' to generate standard JSON ready for immediate upload to the National DHIS2 portal."
 
 ### Closing (2:55 – 3:00)
+
 - **Spoken Voiceover / Caption:**
   > "All tests, including unit tests, API tests, and the 18,300-comparison R parity test, pass with 100% agreement.
   > Thank you very much for your time and consideration."

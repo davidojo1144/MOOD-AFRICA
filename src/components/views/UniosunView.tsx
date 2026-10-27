@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { AlertTierItem } from '@/types/vecdim';
-import { db } from '../../../backend/db';
+import { AlertsClientService } from '@/services/api/alertsService';
 
 export function UniosunView() {
   const [alerts, setAlerts] = useState<AlertTierItem[]>([]);
@@ -22,7 +22,7 @@ export function UniosunView() {
 
   useEffect(() => {
     let isMounted = true;
-    db.getAlerts({
+    AlertsClientService.getAlerts({
       userRole: 'uniosun',
     })
       .then((data) => {

@@ -1,0 +1,6472 @@
+[
+  {
+    "id": "Kano|Dala|2022-01",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-01",
+    "n_records": 1,
+    "mean_risk": 0.084,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-03",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-03",
+    "n_records": 2,
+    "mean_risk": 0.252,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-04",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-04",
+    "n_records": 2,
+    "mean_risk": 0.295,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-05",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.114,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2022-06",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-06",
+    "n_records": 2,
+    "mean_risk": 0.377,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-07",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-07",
+    "n_records": 1,
+    "mean_risk": 0.655,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-10",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-10",
+    "n_records": 3,
+    "mean_risk": 0.422,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2022-12",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.233,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-01",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-01",
+    "n_records": 3,
+    "mean_risk": 0.2,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-02",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-02",
+    "n_records": 3,
+    "mean_risk": 0.408,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-03",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-03",
+    "n_records": 3,
+    "mean_risk": 0.306,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-06",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-06",
+    "n_records": 2,
+    "mean_risk": 0.264,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-07",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-07",
+    "n_records": 1,
+    "mean_risk": 0.631,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-08",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-08",
+    "n_records": 3,
+    "mean_risk": 0.751,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-09",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-09",
+    "n_records": 4,
+    "mean_risk": 0.516,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-10",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-10",
+    "n_records": 3,
+    "mean_risk": 0.417,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2023-11",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.219,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2023-12",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2023-12",
+    "n_records": 2,
+    "mean_risk": 0.334,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-01",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.087,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2024-02",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-02",
+    "n_records": 1,
+    "mean_risk": 0.221,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-03",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.204,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-05",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.111,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-06",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-06",
+    "n_records": 5,
+    "mean_risk": 0.52,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-07",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.766,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-08",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-08",
+    "n_records": 1,
+    "mean_risk": 0.318,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2024-09",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-09",
+    "n_records": 2,
+    "mean_risk": 0.462,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-10",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-10",
+    "n_records": 2,
+    "mean_risk": 0.479,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-11",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.112,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2024-12",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2024-12",
+    "n_records": 4,
+    "mean_risk": 0.121,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-01",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.141,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-02",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.436,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2025-03",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.088,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2025-04",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-04",
+    "n_records": 3,
+    "mean_risk": 0.41,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-05",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-05",
+    "n_records": 1,
+    "mean_risk": 0.24,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2025-07",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-07",
+    "n_records": 2,
+    "mean_risk": 0.802,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-08",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.758,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-09",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-09",
+    "n_records": 2,
+    "mean_risk": 0.667,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-10",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.331,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2025-12",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2025-12",
+    "n_records": 5,
+    "mean_risk": 0.167,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2026-01",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-01",
+    "n_records": 3,
+    "mean_risk": 0.103,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2026-02",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-02",
+    "n_records": 1,
+    "mean_risk": 0.099,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2026-03",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-03",
+    "n_records": 4,
+    "mean_risk": 0.178,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2026-04",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-04",
+    "n_records": 1,
+    "mean_risk": 0.104,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Dala|2026-05",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.472,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Dala|2026-06",
+    "state": "Kano",
+    "lga": "Dala",
+    "month": "2026-06",
+    "n_records": 2,
+    "mean_risk": 0.324,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-01",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.432,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-02",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-02",
+    "n_records": 6,
+    "mean_risk": 0.375,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-03",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-03",
+    "n_records": 3,
+    "mean_risk": 0.304,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-06",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.135,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2022-07",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-07",
+    "n_records": 3,
+    "mean_risk": 0.544,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-10",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-10",
+    "n_records": 1,
+    "mean_risk": 0.366,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2022-11",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.183,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2023-01",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-01",
+    "n_records": 2,
+    "mean_risk": 0.129,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-03",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-03",
+    "n_records": 2,
+    "mean_risk": 0.19,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-04",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-04",
+    "n_records": 2,
+    "mean_risk": 0.261,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-05",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-05",
+    "n_records": 1,
+    "mean_risk": 0.211,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-06",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-06",
+    "n_records": 2,
+    "mean_risk": 0.47,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-07",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-07",
+    "n_records": 1,
+    "mean_risk": 0.671,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2023-09",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-09",
+    "n_records": 2,
+    "mean_risk": 0.725,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-10",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-10",
+    "n_records": 2,
+    "mean_risk": 0.256,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-11",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-11",
+    "n_records": 2,
+    "mean_risk": 0.442,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2023-12",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2023-12",
+    "n_records": 1,
+    "mean_risk": 0.554,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-02",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.144,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-03",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.093,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-04",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-04",
+    "n_records": 3,
+    "mean_risk": 0.249,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-05",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.34,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-06",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-06",
+    "n_records": 4,
+    "mean_risk": 0.431,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-07",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-07",
+    "n_records": 1,
+    "mean_risk": 0.74,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-09",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-09",
+    "n_records": 2,
+    "mean_risk": 0.511,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-10",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-10",
+    "n_records": 4,
+    "mean_risk": 0.42,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2024-11",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.583,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-01",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-01",
+    "n_records": 3,
+    "mean_risk": 0.215,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2025-02",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.138,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-03",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.118,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-05",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-05",
+    "n_records": 2,
+    "mean_risk": 0.253,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2025-07",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-07",
+    "n_records": 2,
+    "mean_risk": 0.838,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-08",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-08",
+    "n_records": 3,
+    "mean_risk": 0.664,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-10",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-10",
+    "n_records": 1,
+    "mean_risk": 0.789,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2025-11",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-11",
+    "n_records": 4,
+    "mean_risk": 0.46,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2025-12",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2025-12",
+    "n_records": 1,
+    "mean_risk": 0.228,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2026-01",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2026-01",
+    "n_records": 2,
+    "mean_risk": 0.202,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Gwale|2026-02",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2026-02",
+    "n_records": 1,
+    "mean_risk": 0.086,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2026-03",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2026-03",
+    "n_records": 3,
+    "mean_risk": 0.12,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2026-04",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2026-04",
+    "n_records": 1,
+    "mean_risk": 0.23,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Gwale|2026-05",
+    "state": "Kano",
+    "lga": "Gwale",
+    "month": "2026-05",
+    "n_records": 5,
+    "mean_risk": 0.396,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-01",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-01",
+    "n_records": 1,
+    "mean_risk": 0.236,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Nasarawa|2022-02",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.353,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-03",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-03",
+    "n_records": 2,
+    "mean_risk": 0.146,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Nasarawa|2022-04",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-04",
+    "n_records": 3,
+    "mean_risk": 0.197,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-05",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.574,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-08",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-08",
+    "n_records": 3,
+    "mean_risk": 0.82,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-10",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-10",
+    "n_records": 3,
+    "mean_risk": 0.428,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-11",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.194,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2022-12",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.097,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-03",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-03",
+    "n_records": 4,
+    "mean_risk": 0.18,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-04",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.319,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-06",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-06",
+    "n_records": 3,
+    "mean_risk": 0.426,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-07",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-07",
+    "n_records": 2,
+    "mean_risk": 0.774,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-09",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-09",
+    "n_records": 1,
+    "mean_risk": 0.733,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2023-11",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.327,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Nasarawa|2023-12",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2023-12",
+    "n_records": 1,
+    "mean_risk": 0.361,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-01",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.37,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-02",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-02",
+    "n_records": 1,
+    "mean_risk": 0.243,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-03",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-03",
+    "n_records": 2,
+    "mean_risk": 0.18,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-04",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-04",
+    "n_records": 1,
+    "mean_risk": 0.173,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Nasarawa|2024-05",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-05",
+    "n_records": 3,
+    "mean_risk": 0.207,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-06",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-06",
+    "n_records": 1,
+    "mean_risk": 0.594,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-07",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.807,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-09",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-09",
+    "n_records": 2,
+    "mean_risk": 0.465,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-11",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.109,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2024-12",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2024-12",
+    "n_records": 2,
+    "mean_risk": 0.208,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-01",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-01",
+    "n_records": 1,
+    "mean_risk": 0.132,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-02",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.175,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-03",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.089,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-04",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.169,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-05",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-05",
+    "n_records": 3,
+    "mean_risk": 0.195,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-06",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.266,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-08",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-08",
+    "n_records": 3,
+    "mean_risk": 0.799,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-09",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-09",
+    "n_records": 1,
+    "mean_risk": 0.641,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-10",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-10",
+    "n_records": 1,
+    "mean_risk": 0.601,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-11",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.562,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2025-12",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.136,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2026-01",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.196,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2026-05",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2026-05",
+    "n_records": 6,
+    "mean_risk": 0.402,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Nasarawa|2026-06",
+    "state": "Kano",
+    "lga": "Nasarawa",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.381,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-01",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.083,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2022-03",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-03",
+    "n_records": 2,
+    "mean_risk": 0.174,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2022-04",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-04",
+    "n_records": 1,
+    "mean_risk": 0.134,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-05",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.259,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-06",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.563,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2022-08",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-08",
+    "n_records": 1,
+    "mean_risk": 0.4,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-10",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-10",
+    "n_records": 1,
+    "mean_risk": 0.388,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-11",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-11",
+    "n_records": 1,
+    "mean_risk": 0.118,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2022-12",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.131,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-01",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-01",
+    "n_records": 1,
+    "mean_risk": 0.081,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2023-02",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.248,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-03",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-03",
+    "n_records": 1,
+    "mean_risk": 0.244,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-04",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.237,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-06",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-06",
+    "n_records": 5,
+    "mean_risk": 0.286,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-07",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-07",
+    "n_records": 2,
+    "mean_risk": 0.36,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-08",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-08",
+    "n_records": 5,
+    "mean_risk": 0.575,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-11",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.555,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2023-12",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2023-12",
+    "n_records": 2,
+    "mean_risk": 0.142,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-01",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-01",
+    "n_records": 2,
+    "mean_risk": 0.199,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-03",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.09,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-04",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-04",
+    "n_records": 2,
+    "mean_risk": 0.102,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-05",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.145,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-06",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-06",
+    "n_records": 1,
+    "mean_risk": 0.632,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2024-07",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.514,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-09",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-09",
+    "n_records": 3,
+    "mean_risk": 0.533,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-10",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-10",
+    "n_records": 3,
+    "mean_risk": 0.323,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-11",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-11",
+    "n_records": 2,
+    "mean_risk": 0.439,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2024-12",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2024-12",
+    "n_records": 4,
+    "mean_risk": 0.149,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-01",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-01",
+    "n_records": 3,
+    "mean_risk": 0.157,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-03",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-03",
+    "n_records": 4,
+    "mean_risk": 0.105,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-05",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-05",
+    "n_records": 2,
+    "mean_risk": 0.214,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-06",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-06",
+    "n_records": 2,
+    "mean_risk": 0.311,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-07",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-07",
+    "n_records": 1,
+    "mean_risk": 0.587,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2025-08",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-08",
+    "n_records": 1,
+    "mean_risk": 0.303,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-09",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-09",
+    "n_records": 2,
+    "mean_risk": 0.523,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-10",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.438,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-11",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.262,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2025-12",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.232,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2026-01",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.158,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Tarauni|2026-02",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-02",
+    "n_records": 2,
+    "mean_risk": 0.124,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2026-03",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-03",
+    "n_records": 2,
+    "mean_risk": 0.263,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2026-04",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-04",
+    "n_records": 2,
+    "mean_risk": 0.103,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2026-05",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.227,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Tarauni|2026-06",
+    "state": "Kano",
+    "lga": "Tarauni",
+    "month": "2026-06",
+    "n_records": 4,
+    "mean_risk": 0.415,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-01",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.117,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-03",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.374,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Ungogo|2022-04",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-04",
+    "n_records": 2,
+    "mean_risk": 0.434,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-06",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-06",
+    "n_records": 2,
+    "mean_risk": 0.351,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Ungogo|2022-08",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-08",
+    "n_records": 3,
+    "mean_risk": 0.526,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-09",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-09",
+    "n_records": 2,
+    "mean_risk": 0.467,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-10",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-10",
+    "n_records": 2,
+    "mean_risk": 0.577,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-11",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-11",
+    "n_records": 1,
+    "mean_risk": 0.333,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2022-12",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2022-12",
+    "n_records": 1,
+    "mean_risk": 0.284,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-02",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.085,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-03",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-03",
+    "n_records": 4,
+    "mean_risk": 0.172,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-04",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.558,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-05",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-05",
+    "n_records": 2,
+    "mean_risk": 0.305,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-06",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-06",
+    "n_records": 2,
+    "mean_risk": 0.442,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-07",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-07",
+    "n_records": 2,
+    "mean_risk": 0.665,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-09",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-09",
+    "n_records": 3,
+    "mean_risk": 0.447,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-10",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-10",
+    "n_records": 1,
+    "mean_risk": 0.591,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2023-11",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2023-11",
+    "n_records": 3,
+    "mean_risk": 0.106,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-01",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-01",
+    "n_records": 3,
+    "mean_risk": 0.13,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-02",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.412,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-03",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-03",
+    "n_records": 3,
+    "mean_risk": 0.181,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-04",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-04",
+    "n_records": 2,
+    "mean_risk": 0.119,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-05",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.289,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-08",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-08",
+    "n_records": 2,
+    "mean_risk": 0.612,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-09",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-09",
+    "n_records": 3,
+    "mean_risk": 0.426,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-10",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-10",
+    "n_records": 2,
+    "mean_risk": 0.457,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-11",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-11",
+    "n_records": 3,
+    "mean_risk": 0.226,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2024-12",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2024-12",
+    "n_records": 2,
+    "mean_risk": 0.1,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-01",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-01",
+    "n_records": 5,
+    "mean_risk": 0.133,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-02",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.452,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-04",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.098,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Ungogo|2025-05",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-05",
+    "n_records": 5,
+    "mean_risk": 0.203,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-06",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-06",
+    "n_records": 2,
+    "mean_risk": 0.171,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-08",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.633,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-09",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-09",
+    "n_records": 3,
+    "mean_risk": 0.423,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Kano|Ungogo|2025-10",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.564,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-11",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-11",
+    "n_records": 1,
+    "mean_risk": 0.116,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2025-12",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.191,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-01",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.082,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-02",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-02",
+    "n_records": 1,
+    "mean_risk": 0.088,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-03",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-03",
+    "n_records": 5,
+    "mean_risk": 0.148,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-04",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-04",
+    "n_records": 5,
+    "mean_risk": 0.271,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-05",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-05",
+    "n_records": 1,
+    "mean_risk": 0.329,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Kano|Ungogo|2026-06",
+    "state": "Kano",
+    "lga": "Ungogo",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.287,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Alimosho|2022-02",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.177,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Alimosho|2022-03",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.302,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-04",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-04",
+    "n_records": 1,
+    "mean_risk": 0.147,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-05",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-05",
+    "n_records": 2,
+    "mean_risk": 0.288,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-06",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-06",
+    "n_records": 4,
+    "mean_risk": 0.35,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-07",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-07",
+    "n_records": 2,
+    "mean_risk": 0.339,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-09",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-09",
+    "n_records": 1,
+    "mean_risk": 0.398,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Alimosho|2022-10",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-10",
+    "n_records": 3,
+    "mean_risk": 0.303,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-11",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.362,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2022-12",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.184,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-01",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-01",
+    "n_records": 2,
+    "mean_risk": 0.123,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-02",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-02",
+    "n_records": 2,
+    "mean_risk": 0.182,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-03",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-03",
+    "n_records": 1,
+    "mean_risk": 0.154,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-04",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.187,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-05",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-05",
+    "n_records": 3,
+    "mean_risk": 0.38,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-06",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-06",
+    "n_records": 1,
+    "mean_risk": 0.376,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-07",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-07",
+    "n_records": 1,
+    "mean_risk": 0.223,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-08",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-08",
+    "n_records": 1,
+    "mean_risk": 0.325,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-09",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-09",
+    "n_records": 3,
+    "mean_risk": 0.429,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Alimosho|2023-10",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-10",
+    "n_records": 4,
+    "mean_risk": 0.341,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2023-11",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.255,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-01",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.164,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Alimosho|2024-02",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.247,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-03",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-03",
+    "n_records": 4,
+    "mean_risk": 0.198,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-05",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-05",
+    "n_records": 2,
+    "mean_risk": 0.326,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-06",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-06",
+    "n_records": 3,
+    "mean_risk": 0.328,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-07",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-07",
+    "n_records": 3,
+    "mean_risk": 0.421,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-08",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-08",
+    "n_records": 4,
+    "mean_risk": 0.337,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-09",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-09",
+    "n_records": 2,
+    "mean_risk": 0.179,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-10",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-10",
+    "n_records": 1,
+    "mean_risk": 0.217,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2024-11",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.209,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-02",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-02",
+    "n_records": 3,
+    "mean_risk": 0.193,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-03",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.113,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-04",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-04",
+    "n_records": 2,
+    "mean_risk": 0.251,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-05",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-05",
+    "n_records": 1,
+    "mean_risk": 0.268,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-07",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-07",
+    "n_records": 2,
+    "mean_risk": 0.454,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-08",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.298,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-09",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-09",
+    "n_records": 1,
+    "mean_risk": 0.335,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-10",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-10",
+    "n_records": 4,
+    "mean_risk": 0.274,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-11",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-11",
+    "n_records": 3,
+    "mean_risk": 0.318,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2025-12",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.437,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2026-02",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2026-02",
+    "n_records": 3,
+    "mean_risk": 0.413,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2026-03",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2026-03",
+    "n_records": 2,
+    "mean_risk": 0.159,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2026-04",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2026-04",
+    "n_records": 3,
+    "mean_risk": 0.273,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2026-05",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.367,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Alimosho|2026-06",
+    "state": "Lagos",
+    "lga": "Alimosho",
+    "month": "2026-06",
+    "n_records": 3,
+    "mean_risk": 0.373,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-02",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.604,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-04",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-04",
+    "n_records": 1,
+    "mean_risk": 0.613,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Badagry|2022-05",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-05",
+    "n_records": 3,
+    "mean_risk": 0.536,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-06",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.385,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-07",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-07",
+    "n_records": 3,
+    "mean_risk": 0.822,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-10",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-10",
+    "n_records": 2,
+    "mean_risk": 0.459,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2022-11",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2022-11",
+    "n_records": 4,
+    "mean_risk": 0.453,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-01",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-01",
+    "n_records": 1,
+    "mean_risk": 0.095,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-02",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.128,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Badagry|2023-03",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-03",
+    "n_records": 5,
+    "mean_risk": 0.406,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-04",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.616,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-06",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-06",
+    "n_records": 1,
+    "mean_risk": 0.393,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-07",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-07",
+    "n_records": 3,
+    "mean_risk": 0.549,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-08",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.746,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-09",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-09",
+    "n_records": 2,
+    "mean_risk": 0.638,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-10",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-10",
+    "n_records": 2,
+    "mean_risk": 0.474,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2023-11",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2023-11",
+    "n_records": 5,
+    "mean_risk": 0.404,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-01",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.225,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-02",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-02",
+    "n_records": 1,
+    "mean_risk": 0.322,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-03",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-03",
+    "n_records": 3,
+    "mean_risk": 0.519,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-04",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-04",
+    "n_records": 2,
+    "mean_risk": 0.513,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-05",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-05",
+    "n_records": 2,
+    "mean_risk": 0.372,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-06",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-06",
+    "n_records": 3,
+    "mean_risk": 0.547,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-07",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-07",
+    "n_records": 1,
+    "mean_risk": 0.589,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-08",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-08",
+    "n_records": 3,
+    "mean_risk": 0.627,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-10",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-10",
+    "n_records": 1,
+    "mean_risk": 0.654,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-11",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.395,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2024-12",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2024-12",
+    "n_records": 1,
+    "mean_risk": 0.383,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-01",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-01",
+    "n_records": 1,
+    "mean_risk": 0.301,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Badagry|2025-02",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-02",
+    "n_records": 3,
+    "mean_risk": 0.151,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-03",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.272,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-04",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-04",
+    "n_records": 2,
+    "mean_risk": 0.314,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-05",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-05",
+    "n_records": 1,
+    "mean_risk": 0.386,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-06",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-06",
+    "n_records": 2,
+    "mean_risk": 0.794,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-07",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-07",
+    "n_records": 1,
+    "mean_risk": 0.62,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-08",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.647,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-09",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-09",
+    "n_records": 3,
+    "mean_risk": 0.55,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-11",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-11",
+    "n_records": 4,
+    "mean_risk": 0.457,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2025-12",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2025-12",
+    "n_records": 4,
+    "mean_risk": 0.242,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2026-01",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2026-01",
+    "n_records": 2,
+    "mean_risk": 0.091,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2026-03",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2026-03",
+    "n_records": 3,
+    "mean_risk": 0.425,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2026-04",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2026-04",
+    "n_records": 1,
+    "mean_risk": 0.56,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2026-05",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2026-05",
+    "n_records": 1,
+    "mean_risk": 0.569,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Badagry|2026-06",
+    "state": "Lagos",
+    "lga": "Badagry",
+    "month": "2026-06",
+    "n_records": 6,
+    "mean_risk": 0.753,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-01",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.449,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-03",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-03",
+    "n_records": 4,
+    "mean_risk": 0.646,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-04",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-04",
+    "n_records": 1,
+    "mean_risk": 0.675,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-05",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.935,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-08",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-08",
+    "n_records": 3,
+    "mean_risk": 0.881,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-09",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-09",
+    "n_records": 1,
+    "mean_risk": 0.779,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-10",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-10",
+    "n_records": 3,
+    "mean_risk": 0.897,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2022-12",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.761,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Epe|2023-01",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-01",
+    "n_records": 1,
+    "mean_risk": 0.567,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-02",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-02",
+    "n_records": 4,
+    "mean_risk": 0.54,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-04",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-04",
+    "n_records": 3,
+    "mean_risk": 0.848,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-05",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-05",
+    "n_records": 2,
+    "mean_risk": 0.845,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-07",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-07",
+    "n_records": 1,
+    "mean_risk": 0.843,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-08",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.907,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2023-09",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-09",
+    "n_records": 1,
+    "mean_risk": 0.912,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Epe|2023-11",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.817,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Epe|2023-12",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2023-12",
+    "n_records": 1,
+    "mean_risk": 0.621,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Epe|2024-01",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-01",
+    "n_records": 2,
+    "mean_risk": 0.582,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-02",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-02",
+    "n_records": 2,
+    "mean_risk": 0.676,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-03",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.748,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-07",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-07",
+    "n_records": 1,
+    "mean_risk": 0.889,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-08",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-08",
+    "n_records": 4,
+    "mean_risk": 0.871,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-09",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-09",
+    "n_records": 2,
+    "mean_risk": 0.92,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2024-11",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2024-11",
+    "n_records": 3,
+    "mean_risk": 0.652,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-01",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.593,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-02",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.446,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-04",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.656,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-05",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-05",
+    "n_records": 1,
+    "mean_risk": 0.825,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-06",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.861,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-07",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-07",
+    "n_records": 2,
+    "mean_risk": 0.932,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-08",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.909,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-09",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-09",
+    "n_records": 1,
+    "mean_risk": 0.886,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-10",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.884,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-11",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.866,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2025-12",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2025-12",
+    "n_records": 1,
+    "mean_risk": 0.876,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2026-01",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2026-01",
+    "n_records": 3,
+    "mean_risk": 0.584,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2026-02",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2026-02",
+    "n_records": 3,
+    "mean_risk": 0.661,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2026-04",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2026-04",
+    "n_records": 2,
+    "mean_risk": 0.669,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Epe|2026-05",
+    "state": "Lagos",
+    "lga": "Epe",
+    "month": "2026-05",
+    "n_records": 1,
+    "mean_risk": 0.93,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-01",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-01",
+    "n_records": 4,
+    "mean_risk": 0.166,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-02",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.122,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-03",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.206,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-04",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-04",
+    "n_records": 2,
+    "mean_risk": 0.515,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-05",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.827,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-06",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.581,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-07",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-07",
+    "n_records": 2,
+    "mean_risk": 0.538,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-08",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-08",
+    "n_records": 1,
+    "mean_risk": 0.378,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-09",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-09",
+    "n_records": 2,
+    "mean_risk": 0.521,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-10",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-10",
+    "n_records": 1,
+    "mean_risk": 0.359,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-11",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-11",
+    "n_records": 1,
+    "mean_risk": 0.276,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2022-12",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.296,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-01",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-01",
+    "n_records": 3,
+    "mean_risk": 0.163,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-03",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-03",
+    "n_records": 3,
+    "mean_risk": 0.282,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-05",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-05",
+    "n_records": 2,
+    "mean_risk": 0.397,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-06",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-06",
+    "n_records": 2,
+    "mean_risk": 0.599,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-07",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-07",
+    "n_records": 3,
+    "mean_risk": 0.657,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-09",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-09",
+    "n_records": 2,
+    "mean_risk": 0.636,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-10",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-10",
+    "n_records": 2,
+    "mean_risk": 0.458,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-11",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-11",
+    "n_records": 4,
+    "mean_risk": 0.455,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2023-12",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2023-12",
+    "n_records": 1,
+    "mean_risk": 0.192,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-01",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.096,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-02",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.321,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-03",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.365,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-05",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-05",
+    "n_records": 2,
+    "mean_risk": 0.473,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-06",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-06",
+    "n_records": 1,
+    "mean_risk": 0.66,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-07",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.598,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-08",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-08",
+    "n_records": 4,
+    "mean_risk": 0.781,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-09",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-09",
+    "n_records": 1,
+    "mean_risk": 0.743,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-11",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-11",
+    "n_records": 2,
+    "mean_risk": 0.469,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2024-12",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2024-12",
+    "n_records": 2,
+    "mean_risk": 0.16,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-01",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.165,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-02",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-02",
+    "n_records": 1,
+    "mean_risk": 0.213,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-03",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-03",
+    "n_records": 1,
+    "mean_risk": 0.38,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-05",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-05",
+    "n_records": 5,
+    "mean_risk": 0.67,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-06",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.395,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-09",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-09",
+    "n_records": 1,
+    "mean_risk": 0.617,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-11",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-11",
+    "n_records": 1,
+    "mean_risk": 0.279,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2025-12",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2025-12",
+    "n_records": 3,
+    "mean_risk": 0.411,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2026-01",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.309,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Eti-Osa|2026-03",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2026-03",
+    "n_records": 1,
+    "mean_risk": 0.308,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2026-04",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2026-04",
+    "n_records": 1,
+    "mean_risk": 0.358,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Eti-Osa|2026-05",
+    "state": "Lagos",
+    "lga": "Eti-Osa",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.643,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-01",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-01",
+    "n_records": 4,
+    "mean_risk": 0.21,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-02",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.107,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-03",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.559,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-04",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-04",
+    "n_records": 1,
+    "mean_risk": 0.189,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-05",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.674,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-06",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.317,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-07",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-07",
+    "n_records": 1,
+    "mean_risk": 0.586,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-08",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-08",
+    "n_records": 2,
+    "mean_risk": 0.84,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-09",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-09",
+    "n_records": 1,
+    "mean_risk": 0.787,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-10",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-10",
+    "n_records": 2,
+    "mean_risk": 0.635,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-11",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.476,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2022-12",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.45,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-01",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-01",
+    "n_records": 3,
+    "mean_risk": 0.32,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-02",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.108,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-03",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-03",
+    "n_records": 1,
+    "mean_risk": 0.126,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-04",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.25,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-07",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-07",
+    "n_records": 4,
+    "mean_risk": 0.557,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-08",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-08",
+    "n_records": 5,
+    "mean_risk": 0.64,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-09",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-09",
+    "n_records": 1,
+    "mean_risk": 0.216,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-10",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-10",
+    "n_records": 2,
+    "mean_risk": 0.336,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2023-11",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2023-11",
+    "n_records": 4,
+    "mean_risk": 0.352,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-01",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-01",
+    "n_records": 4,
+    "mean_risk": 0.156,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-02",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.292,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-03",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-03",
+    "n_records": 2,
+    "mean_risk": 0.224,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-04",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-04",
+    "n_records": 3,
+    "mean_risk": 0.518,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-05",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-05",
+    "n_records": 2,
+    "mean_risk": 0.651,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-06",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-06",
+    "n_records": 1,
+    "mean_risk": 0.925,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-07",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.615,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-08",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-08",
+    "n_records": 1,
+    "mean_risk": 0.573,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-11",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-11",
+    "n_records": 1,
+    "mean_risk": 0.611,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2024-12",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2024-12",
+    "n_records": 3,
+    "mean_risk": 0.17,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-01",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-01",
+    "n_records": 1,
+    "mean_risk": 0.165,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-02",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.149,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-03",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-03",
+    "n_records": 3,
+    "mean_risk": 0.186,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-04",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.365,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-05",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-05",
+    "n_records": 1,
+    "mean_risk": 0.578,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-06",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-06",
+    "n_records": 2,
+    "mean_risk": 0.588,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-07",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-07",
+    "n_records": 1,
+    "mean_risk": 0.392,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-09",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-09",
+    "n_records": 3,
+    "mean_risk": 0.441,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-10",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-10",
+    "n_records": 1,
+    "mean_risk": 0.784,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-11",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.354,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2025-12",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.241,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-01",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.315,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-02",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-02",
+    "n_records": 2,
+    "mean_risk": 0.226,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-03",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-03",
+    "n_records": 2,
+    "mean_risk": 0.26,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-04",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-04",
+    "n_records": 1,
+    "mean_risk": 0.39,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-05",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.524,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Lagos|Ikorodu|2026-06",
+    "state": "Lagos",
+    "lga": "Ikorodu",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.659,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ede North|2022-01",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.125,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-02",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-02",
+    "n_records": 2,
+    "mean_risk": 0.11,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-03",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-03",
+    "n_records": 3,
+    "mean_risk": 0.137,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-05",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.409,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-06",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.401,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-07",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-07",
+    "n_records": 1,
+    "mean_risk": 0.407,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ede North|2022-08",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-08",
+    "n_records": 1,
+    "mean_risk": 0.345,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-09",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-09",
+    "n_records": 2,
+    "mean_risk": 0.382,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-10",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-10",
+    "n_records": 2,
+    "mean_risk": 0.229,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2022-11",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.379,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-01",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-01",
+    "n_records": 1,
+    "mean_risk": 0.188,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-02",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-02",
+    "n_records": 2,
+    "mean_risk": 0.134,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-03",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-03",
+    "n_records": 1,
+    "mean_risk": 0.22,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ede North|2023-04",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-04",
+    "n_records": 2,
+    "mean_risk": 0.356,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-05",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-05",
+    "n_records": 2,
+    "mean_risk": 0.48,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-06",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-06",
+    "n_records": 1,
+    "mean_risk": 0.606,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-07",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-07",
+    "n_records": 2,
+    "mean_risk": 0.477,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-09",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-09",
+    "n_records": 1,
+    "mean_risk": 0.572,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-10",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-10",
+    "n_records": 1,
+    "mean_risk": 0.245,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ede North|2023-11",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-11",
+    "n_records": 4,
+    "mean_risk": 0.258,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2023-12",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2023-12",
+    "n_records": 2,
+    "mean_risk": 0.265,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-01",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.205,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-03",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.212,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-05",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.403,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-07",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.63,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-08",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-08",
+    "n_records": 1,
+    "mean_risk": 0.29,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-09",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-09",
+    "n_records": 1,
+    "mean_risk": 0.338,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-10",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-10",
+    "n_records": 2,
+    "mean_risk": 0.293,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-11",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-11",
+    "n_records": 4,
+    "mean_risk": 0.313,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2024-12",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2024-12",
+    "n_records": 3,
+    "mean_risk": 0.277,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-01",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-01",
+    "n_records": 1,
+    "mean_risk": 0.092,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-02",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-02",
+    "n_records": 7,
+    "mean_risk": 0.155,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-04",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.235,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-05",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-05",
+    "n_records": 4,
+    "mean_risk": 0.416,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-06",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-06",
+    "n_records": 2,
+    "mean_risk": 0.475,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-07",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-07",
+    "n_records": 1,
+    "mean_risk": 0.231,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-08",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.291,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-09",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-09",
+    "n_records": 4,
+    "mean_risk": 0.419,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-10",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.463,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-11",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-11",
+    "n_records": 3,
+    "mean_risk": 0.307,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2025-12",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2025-12",
+    "n_records": 3,
+    "mean_risk": 0.278,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2026-02",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2026-02",
+    "n_records": 2,
+    "mean_risk": 0.28,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2026-03",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2026-03",
+    "n_records": 3,
+    "mean_risk": 0.257,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2026-04",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2026-04",
+    "n_records": 2,
+    "mean_risk": 0.281,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2026-05",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2026-05",
+    "n_records": 1,
+    "mean_risk": 0.618,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ede North|2026-06",
+    "state": "Osun",
+    "lga": "Ede North",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.666,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2022-01",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.152,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2022-02",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.201,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2022-03",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.357,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ife Central|2022-05",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-05",
+    "n_records": 2,
+    "mean_risk": 0.466,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ife Central|2022-06",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.622,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2022-09",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2022-09",
+    "n_records": 3,
+    "mean_risk": 0.541,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-01",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-01",
+    "n_records": 3,
+    "mean_risk": 0.334,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-02",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-02",
+    "n_records": 3,
+    "mean_risk": 0.242,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-04",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-04",
+    "n_records": 1,
+    "mean_risk": 0.628,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-05",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-05",
+    "n_records": 1,
+    "mean_risk": 0.927,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-06",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-06",
+    "n_records": 2,
+    "mean_risk": 0.863,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-07",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-07",
+    "n_records": 2,
+    "mean_risk": 0.902,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-08",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.623,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-09",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-09",
+    "n_records": 1,
+    "mean_risk": 0.68,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-10",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-10",
+    "n_records": 1,
+    "mean_risk": 0.645,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-11",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.626,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2023-12",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2023-12",
+    "n_records": 3,
+    "mean_risk": 0.528,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-01",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-01",
+    "n_records": 2,
+    "mean_risk": 0.246,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-03",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-03",
+    "n_records": 2,
+    "mean_risk": 0.461,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-04",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-04",
+    "n_records": 2,
+    "mean_risk": 0.468,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-05",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.83,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ife Central|2024-06",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-06",
+    "n_records": 3,
+    "mean_risk": 0.81,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-07",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.899,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-08",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-08",
+    "n_records": 4,
+    "mean_risk": 0.579,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-09",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-09",
+    "n_records": 1,
+    "mean_risk": 0.917,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-10",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-10",
+    "n_records": 2,
+    "mean_risk": 0.57,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2024-11",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2024-11",
+    "n_records": 3,
+    "mean_risk": 0.649,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-01",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-01",
+    "n_records": 1,
+    "mean_risk": 0.143,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ife Central|2025-03",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-03",
+    "n_records": 3,
+    "mean_risk": 0.445,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-04",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.603,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-05",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-05",
+    "n_records": 2,
+    "mean_risk": 0.53,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-06",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.856,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-07",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-07",
+    "n_records": 3,
+    "mean_risk": 0.833,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-08",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-08",
+    "n_records": 1,
+    "mean_risk": 0.763,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-10",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.597,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2025-12",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2025-12",
+    "n_records": 3,
+    "mean_risk": 0.43,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2026-02",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2026-02",
+    "n_records": 3,
+    "mean_risk": 0.285,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2026-03",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2026-03",
+    "n_records": 3,
+    "mean_risk": 0.424,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2026-05",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.637,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ife Central|2026-06",
+    "state": "Osun",
+    "lga": "Ife Central",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.879,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2022-01",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-01",
+    "n_records": 1,
+    "mean_risk": 0.195,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2022-02",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-02",
+    "n_records": 3,
+    "mean_risk": 0.139,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2022-03",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-03",
+    "n_records": 1,
+    "mean_risk": 0.364,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2022-04",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-04",
+    "n_records": 2,
+    "mean_risk": 0.267,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2022-05",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.399,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2022-08",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-08",
+    "n_records": 2,
+    "mean_risk": 0.394,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2022-09",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-09",
+    "n_records": 1,
+    "mean_risk": 0.369,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2022-11",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-11",
+    "n_records": 1,
+    "mean_risk": 0.176,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2022-12",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2022-12",
+    "n_records": 3,
+    "mean_risk": 0.239,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-01",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-01",
+    "n_records": 2,
+    "mean_risk": 0.094,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-02",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-02",
+    "n_records": 5,
+    "mean_risk": 0.14,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-03",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-03",
+    "n_records": 1,
+    "mean_risk": 0.27,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2023-04",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-04",
+    "n_records": 3,
+    "mean_risk": 0.288,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-05",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-05",
+    "n_records": 1,
+    "mean_risk": 0.297,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2023-06",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-06",
+    "n_records": 1,
+    "mean_risk": 0.299,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-07",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-07",
+    "n_records": 3,
+    "mean_risk": 0.531,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-08",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.344,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-09",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-09",
+    "n_records": 3,
+    "mean_risk": 0.535,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-10",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-10",
+    "n_records": 2,
+    "mean_risk": 0.349,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-11",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-11",
+    "n_records": 1,
+    "mean_risk": 0.312,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2023-12",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2023-12",
+    "n_records": 3,
+    "mean_risk": 0.185,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-02",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-02",
+    "n_records": 3,
+    "mean_risk": 0.211,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-04",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-04",
+    "n_records": 2,
+    "mean_risk": 0.162,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-07",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-07",
+    "n_records": 2,
+    "mean_risk": 0.792,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-08",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-08",
+    "n_records": 1,
+    "mean_risk": 0.609,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-10",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-10",
+    "n_records": 2,
+    "mean_risk": 0.238,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-11",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-11",
+    "n_records": 2,
+    "mean_risk": 0.33,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2024-12",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2024-12",
+    "n_records": 3,
+    "mean_risk": 0.418,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-01",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.15,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Ilesa East|2025-02",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-02",
+    "n_records": 1,
+    "mean_risk": 0.153,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-03",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-03",
+    "n_records": 2,
+    "mean_risk": 0.168,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-04",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-04",
+    "n_records": 2,
+    "mean_risk": 0.316,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-05",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-05",
+    "n_records": 2,
+    "mean_risk": 0.804,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-07",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-07",
+    "n_records": 4,
+    "mean_risk": 0.451,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-08",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-08",
+    "n_records": 4,
+    "mean_risk": 0.414,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-09",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-09",
+    "n_records": 3,
+    "mean_risk": 0.346,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-10",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.342,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-11",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.275,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2025-12",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2025-12",
+    "n_records": 3,
+    "mean_risk": 0.294,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2026-01",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2026-01",
+    "n_records": 2,
+    "mean_risk": 0.254,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2026-02",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2026-02",
+    "n_records": 2,
+    "mean_risk": 0.444,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2026-03",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2026-03",
+    "n_records": 2,
+    "mean_risk": 0.44,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2026-04",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2026-04",
+    "n_records": 2,
+    "mean_risk": 0.222,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Ilesa East|2026-06",
+    "state": "Osun",
+    "lga": "Ilesa East",
+    "month": "2026-06",
+    "n_records": 3,
+    "mean_risk": 0.368,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-01",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-01",
+    "n_records": 2,
+    "mean_risk": 0.115,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-02",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-02",
+    "n_records": 2,
+    "mean_risk": 0.269,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-03",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-03",
+    "n_records": 4,
+    "mean_risk": 0.405,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-05",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-05",
+    "n_records": 2,
+    "mean_risk": 0.73,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-07",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-07",
+    "n_records": 2,
+    "mean_risk": 0.677,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-08",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-08",
+    "n_records": 3,
+    "mean_risk": 0.548,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-09",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-09",
+    "n_records": 3,
+    "mean_risk": 0.534,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-10",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-10",
+    "n_records": 1,
+    "mean_risk": 0.387,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Iwo|2022-11",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-11",
+    "n_records": 2,
+    "mean_risk": 0.464,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2022-12",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2022-12",
+    "n_records": 2,
+    "mean_risk": 0.443,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-01",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-01",
+    "n_records": 3,
+    "mean_risk": 0.161,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-02",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.371,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-03",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-03",
+    "n_records": 3,
+    "mean_risk": 0.427,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-04",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-04",
+    "n_records": 3,
+    "mean_risk": 0.384,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-05",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-05",
+    "n_records": 1,
+    "mean_risk": 0.608,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-08",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.343,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2023-09",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2023-09",
+    "n_records": 2,
+    "mean_risk": 0.642,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-01",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-01",
+    "n_records": 3,
+    "mean_risk": 0.411,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-02",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-02",
+    "n_records": 1,
+    "mean_risk": 0.127,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Iwo|2024-03",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-03",
+    "n_records": 2,
+    "mean_risk": 0.349,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-05",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-05",
+    "n_records": 1,
+    "mean_risk": 0.858,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-06",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-06",
+    "n_records": 3,
+    "mean_risk": 0.853,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-07",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-07",
+    "n_records": 1,
+    "mean_risk": 0.735,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Iwo|2024-08",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-08",
+    "n_records": 2,
+    "mean_risk": 0.525,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-11",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-11",
+    "n_records": 2,
+    "mean_risk": 0.391,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2024-12",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2024-12",
+    "n_records": 2,
+    "mean_risk": 0.363,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-01",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.234,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-03",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-03",
+    "n_records": 2,
+    "mean_risk": 0.348,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-04",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-04",
+    "n_records": 1,
+    "mean_risk": 0.347,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-05",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-05",
+    "n_records": 3,
+    "mean_risk": 0.545,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-06",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.592,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-08",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-08",
+    "n_records": 4,
+    "mean_risk": 0.553,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-09",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-09",
+    "n_records": 2,
+    "mean_risk": 0.472,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-10",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-10",
+    "n_records": 1,
+    "mean_risk": 0.728,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-11",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-11",
+    "n_records": 2,
+    "mean_risk": 0.478,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2025-12",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2025-12",
+    "n_records": 2,
+    "mean_risk": 0.3,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2026-01",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2026-01",
+    "n_records": 1,
+    "mean_risk": 0.101,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2026-03",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2026-03",
+    "n_records": 1,
+    "mean_risk": 0.283,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Iwo|2026-05",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2026-05",
+    "n_records": 2,
+    "mean_risk": 0.448,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Iwo|2026-06",
+    "state": "Osun",
+    "lga": "Iwo",
+    "month": "2026-06",
+    "n_records": 1,
+    "mean_risk": 0.94,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-01",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-01",
+    "n_records": 4,
+    "mean_risk": 0.433,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-02",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-02",
+    "n_records": 1,
+    "mean_risk": 0.355,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-04",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-04",
+    "n_records": 3,
+    "mean_risk": 0.539,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-05",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-05",
+    "n_records": 1,
+    "mean_risk": 0.738,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-06",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-06",
+    "n_records": 1,
+    "mean_risk": 0.904,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-07",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-07",
+    "n_records": 1,
+    "mean_risk": 0.937,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-08",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-08",
+    "n_records": 3,
+    "mean_risk": 0.815,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-09",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-09",
+    "n_records": 2,
+    "mean_risk": 0.891,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-10",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-10",
+    "n_records": 3,
+    "mean_risk": 0.776,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2022-11",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-11",
+    "n_records": 1,
+    "mean_risk": 0.914,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Osogbo|2022-12",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2022-12",
+    "n_records": 3,
+    "mean_risk": 0.596,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-01",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-01",
+    "n_records": 1,
+    "mean_risk": 0.565,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-02",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-02",
+    "n_records": 1,
+    "mean_risk": 0.218,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Osogbo|2023-04",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-04",
+    "n_records": 2,
+    "mean_risk": 0.602,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-05",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-05",
+    "n_records": 3,
+    "mean_risk": 0.672,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-06",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-06",
+    "n_records": 1,
+    "mean_risk": 0.922,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-07",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-07",
+    "n_records": 1,
+    "mean_risk": 0.812,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-08",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-08",
+    "n_records": 2,
+    "mean_risk": 0.771,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-09",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-09",
+    "n_records": 2,
+    "mean_risk": 0.723,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-10",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-10",
+    "n_records": 1,
+    "mean_risk": 0.662,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Osogbo|2023-11",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-11",
+    "n_records": 2,
+    "mean_risk": 0.679,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2023-12",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2023-12",
+    "n_records": 4,
+    "mean_risk": 0.568,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-01",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-01",
+    "n_records": 1,
+    "mean_risk": 0.257,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-02",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-02",
+    "n_records": 1,
+    "mean_risk": 0.31,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-03",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-03",
+    "n_records": 1,
+    "mean_risk": 0.607,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-04",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-04",
+    "n_records": 1,
+    "mean_risk": 0.756,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-05",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-05",
+    "n_records": 4,
+    "mean_risk": 0.873,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-08",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-08",
+    "n_records": 1,
+    "mean_risk": 0.835,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2024-10",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2024-10",
+    "n_records": 3,
+    "mean_risk": 0.552,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-01",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-01",
+    "n_records": 2,
+    "mean_risk": 0.435,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-02",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-02",
+    "n_records": 2,
+    "mean_risk": 0.456,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-04",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-04",
+    "n_records": 2,
+    "mean_risk": 0.471,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-05",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-05",
+    "n_records": 3,
+    "mean_risk": 0.65,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-06",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-06",
+    "n_records": 1,
+    "mean_risk": 0.894,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-07",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-07",
+    "n_records": 5,
+    "mean_risk": 0.797,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-08",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-08",
+    "n_records": 2,
+    "mean_risk": 0.543,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-09",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-09",
+    "n_records": 2,
+    "mean_risk": 0.868,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-10",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-10",
+    "n_records": 2,
+    "mean_risk": 0.85,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2025-11",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-11",
+    "n_records": 1,
+    "mean_risk": 0.625,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": false
+  },
+  {
+    "id": "Osun|Osogbo|2025-12",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2025-12",
+    "n_records": 1,
+    "mean_risk": 0.272,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2026-02",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2026-02",
+    "n_records": 1,
+    "mean_risk": 0.332,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2026-03",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2026-03",
+    "n_records": 3,
+    "mean_risk": 0.529,
+    "tier": "WARNING",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2026-05",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2026-05",
+    "n_records": 1,
+    "mean_risk": 0.389,
+    "tier": "WATCH",
+    "pyrethroid_resistance_flag": true
+  },
+  {
+    "id": "Osun|Osogbo|2026-06",
+    "state": "Osun",
+    "lga": "Osogbo",
+    "month": "2026-06",
+    "n_records": 2,
+    "mean_risk": 0.769,
+    "tier": "ALERT",
+    "pyrethroid_resistance_flag": true
+  }
+]
