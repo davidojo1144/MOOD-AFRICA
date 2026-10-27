@@ -353,8 +353,13 @@ In accordance with candidate instructions, the use of AI tools during the techni
 
 ```
 ├── app/
-│   ├── _layout.tsx                     # App root stack provider & font loading
-│   └── index.tsx                       # Main entry with role switching & tab navigation
+│   ├── (tabs)/
+│   │   ├── _layout.tsx                 # Expo Router native bottom tab bar & custom header
+│   │   ├── index.tsx                   # Field Entomologist screen (Tab 1)
+│   │   ├── vecdim.tsx                  # VECDIM State Surveillance screen (Tab 2)
+│   │   └── uniosun.tsx                 # UNIOSUN National Research & DHIS2 screen (Tab 3)
+│   ├── _layout.tsx                     # Root stack navigator, Toast host, and draft resume listener
+│   └── index.tsx                       # Initial redirect to /(tabs)
 ├── backend/
 │   ├── db.ts                           # Dual-mode database engine (PostgreSQL/PostGIS + Embedded)
 │   ├── server.ts                       # Express REST API (Batch sync, alerts, DHIS2 export)
@@ -371,8 +376,11 @@ In accordance with candidate instructions, the use of AI tools during the techni
 ├── src/
 │   ├── components/
 │   │   ├── common/
+│   │   │   ├── CustomModal.tsx         # Themed custom modals (danger, warning, success, info)
 │   │   │   ├── DraftResumeModal.tsx    # Crash/restart draft recovery popup
-│   │   │   └── RoleSwitcher.tsx        # Switch between Field, VECDIM, and UNIOSUN roles
+│   │   │   ├── FeedbackStates.tsx      # Themed empty states, error states with offline fallback
+│   │   │   ├── RoleSwitcher.tsx        # Switch between Field, VECDIM, and UNIOSUN roles
+│   │   │   └── Skeleton.tsx            # Structural pulse skeleton loaders matching screen layout
 │   │   ├── forms/
 │   │   │   └── EntomologyForm.tsx      # Offline capture form with live badges & GPS simulator
 │   │   └── views/
@@ -380,8 +388,11 @@ In accordance with candidate instructions, the use of AI tools during the techni
 │   │       ├── VecdimView.tsx          # VECDIM state officer alert feed & acknowledgment
 │   │       └── UniosunView.tsx         # UNIOSUN national overview (86/135/426) & DHIS2 export
 │   ├── lib/
-│   │   └── storage.ts                  # AsyncStorage wrapper & RFC 4122 v4 UUID generator
+│   │   ├── haptics.ts                  # Haptic feedback integration (expo-haptics)
+│   │   ├── storage.ts                  # AsyncStorage wrapper & RFC 4122 v4 UUID generator
+│   │   └── toast.ts                    # Floating toast notifications (react-native-toast-message)
 │   ├── services/
+│   │   ├── api/alertsService.ts        # Client REST API with resilient offline benchmark fallback
 │   │   ├── auth/demoUsers.ts           # 7 benchmark demo users with roles and state scopes
 │   │   ├── location/locationService.ts # GPS meter, live accuracy simulation presets
 │   │   ├── sync/syncService.ts         # Client sync queue with exponential backoff
