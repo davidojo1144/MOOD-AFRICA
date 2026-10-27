@@ -10,6 +10,7 @@
     "@tanstack/react-query": "^5.104.5",
     "axios": "^1.20.0",
     "clsx": "^2.1.1",
+    "cors": "^2.8.6",
     "expo": "~58.0.17",
     "expo-clipboard": "~58.0.4",
     "expo-constants": "~58.0.13",
@@ -21,6 +22,7 @@
     "expo-image": "~58.0.16",
     "expo-linking": "~58.0.14",
     "expo-local-authentication": "~58.0.2",
+    "expo-location": "~58.0.19",
     "expo-router": "~58.0.25",
     "expo-secure-store": "~58.0.2",
     "expo-splash-screen": "~58.0.11",
@@ -28,8 +30,10 @@
     "expo-symbols": "~58.0.4",
     "expo-system-ui": "~58.0.6",
     "expo-web-browser": "~58.0.6",
+    "express": "^5.3.0",
     "lucide-react-native": "^1.61.0",
     "nativewind": "^4.2.7",
+    "pg": "^8.23.1",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-hook-form": "^7.90.0",
@@ -48,7 +52,10 @@
     "zustand": "^5.0.16"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
     "@types/react": "~19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~58.0.4",
@@ -73,9 +80,11 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "doctor": "expo-doctor",
-    "test": "tsx scripts/run_unit_tests.ts && tsx scripts/run_parity_test.ts",
+    "test": "tsx scripts/run_unit_tests.ts && tsx scripts/run_parity_test.ts && tsx scripts/run_sync_api_tests.ts",
     "test:unit": "tsx scripts/run_unit_tests.ts",
-    "test:parity": "tsx scripts/run_parity_test.ts"
+    "test:parity": "tsx scripts/run_parity_test.ts",
+    "test:sync": "tsx scripts/run_sync_api_tests.ts",
+    "server": "tsx backend/server.ts"
   },
   "private": true
 }
