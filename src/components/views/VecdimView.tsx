@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
   Modal,
+  RefreshControl,
   ScrollView,
   Text,
   TextInput,
@@ -36,6 +37,7 @@ export function VecdimView() {
   const [selectedLga, setSelectedLga] = useState<string>('All');
   const [selectedTier, setSelectedTier] = useState<string>('All');
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [fetchError, setFetchError] = useState<string | null>(null);
 
   // Acknowledgment Modal
@@ -43,6 +45,14 @@ export function VecdimView() {
   const [ackNotes, setAckNotes] = useState<string>('');
   const [isSubmittingAck, setIsSubmittingAck] = useState<boolean>(false);
   const [refreshKey, setRefreshKey] = useState<number>(0);
+
+  const handlePullRefresh = async () => {
+    setIsRefreshing(true);
+    haptics.light();
+    setRefreshKey((k) => k + 1);
+    await new Promise((res) => setTimeout(res, 500));
+    setIsRefreshing(false);
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -278,24 +288,71 @@ export function VecdimView() {
       <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
-        showsVerticalScrollIndicator={false}>
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isRefreshing}
+            onRefresh={handlePullRefresh}
+            tintColor="#2563EB"
+            colors={['#2563EB']}
+          />
+        }>
         {isLoading ? (
           <AlertListSkeleton count={4} />
         ) : fetchError ? (
           <ErrorState
-            title="Unable to Load Alerts"
+            title="Server Connection Interrupted"
             message={fetchError}
+            retryLabel="Retry Server"
             onRetry={() => {
               setIsLoading(true);
               setFetchError(null);
               setRefreshKey((k) => k + 1);
             }}
+            secondaryActionLabel="Use Offline Cache"
+            onSecondaryAction={async () => {
+              setIsLoading(true);
+              setFetchError(null);
+              const offlineData = await AlertsClientService.getAlerts({
+                userRole: 'vecdim',
+                userState: state,
+                lga: selectedLga !== 'All' ? selectedLga : undefined,
+              });
+              setAlerts(offlineData);
+              setIsLoading(false);
+              showToast.info('Offline Cache Loaded', `Displaying ${state} state cached alerts.`);
+            }}
           />
         ) : filteredAlerts.length === 0 ? (
           <EmptyState
-            icon={<ShieldCheck size={36} color="#059669" />}
-            title="No Alerts Found"
-            description={`No early warning alerts matching ${selectedTier !== 'All' ? selectedTier : 'the active'} filters for ${state} State.`}
+            variant={
+              selectedTier === 'ALERT'
+                ? 'rose'
+                : selectedTier === 'WARNING'
+                  ? 'amber'
+                  : selectedTier === 'WATCH'
+                    ? 'blue'
+                    : 'slate'
+            }
+            icon={
+              selectedTier === 'ALERT' ? (
+                <Flame size={36} color="#E11D48" />
+              ) : selectedTier === 'WARNING' ? (
+                <AlertTriangle size={36} color="#D97706" />
+              ) : (
+                <ShieldCheck size={36} color="#059669" />
+              )
+            }
+            title={
+              selectedTier !== 'All'
+                ? `No ${selectedTier} Alerts in ${selectedLga === 'All' ? state : selectedLga}`
+                : `No Alerts in ${selectedLga}`
+            }
+            description={
+              selectedTier !== 'All'
+                ? `No alerts matching tier ${selectedTier} found. You can clear this filter to inspect other tiers.`
+                : `Epidemic risk is below surveillance thresholds for the selected parameters.`
+            }
             actionLabel="Reset Filters"
             onAction={() => {
               setSelectedLga('All');

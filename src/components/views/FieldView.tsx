@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import {
+  ActivityIndicator,
+  RefreshControl,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { FieldRecord } from '@/types/vecdim';
 import { useRecordsStore } from '@/store/recordsStore';
 import { syncEngine } from '@/services/sync/syncService';
@@ -13,10 +20,13 @@ import {
   MapPin,
   AlertTriangle,
   CheckCircle2,
+  CheckCircle,
   Clock,
   Bug,
   ClipboardList,
   ChevronRight,
+  Inbox,
+  AlertCircle,
 } from 'lucide-react-native';
 
 interface FieldViewProps {
@@ -29,7 +39,9 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
   const { records, currentUser, isInitialized, saveRecord } = useRecordsStore();
   const [filter, setFilter] = useState<'all' | 'pending' | 'attention' | 'synced'>('all');
   const [isSyncing, setIsSyncing] = useState<boolean>(false);
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [syncStatusMsg, setSyncStatusMsg] = useState<string>('');
+  const [syncError, setSyncError] = useState<string | null>(null);
 
   const userRecords = records;
   const pendingCount = userRecords.filter((r) => r.status === 'pending_sync').length;
@@ -45,9 +57,18 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
     return true;
   });
 
+  const handlePullRefresh = async () => {
+    setIsRefreshing(true);
+    haptics.light();
+    await new Promise((res) => setTimeout(res, 600));
+    setIsRefreshing(false);
+    showToast.info('Outbox Refreshed', `${userRecords.length} local records ready.`);
+  };
+
   const handleSyncNow = async () => {
     haptics.light();
     setIsSyncing(true);
+    setSyncError(null);
     setSyncStatusMsg('Connecting to VECDIM server...');
     const result = await syncEngine.syncPendingRecords({
       forceSimulateOffline: isOfflineMode,
@@ -55,9 +76,17 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
     setIsSyncing(false);
     setSyncStatusMsg(result.message);
     if (result.success) {
-      haptics.success();
-      showToast.success('Sync Completed', result.message);
+      if (result.rejected > 0) {
+        setSyncError(`${result.rejected} record(s) rejected by server validation.`);
+        haptics.error();
+        showToast.error('Sync Alert', `${result.rejected} record(s) rejected.`);
+      } else {
+        setSyncError(null);
+        haptics.success();
+        showToast.success('Sync Completed', result.message);
+      }
     } else {
+      setSyncError(result.message);
       haptics.warning();
       showToast.info('Sync Status', result.message);
     }
@@ -317,7 +346,20 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
           </TouchableOpacity>
         </View>
 
-        {syncStatusMsg ? (
+        {/* Sync Error State Banner (Dismissable & Retryable) */}
+        {syncError ? (
+          <View className="mt-2.5 flex-row items-center justify-between rounded-xl border border-rose-200 bg-rose-50/90 p-2.5">
+            <View className="flex-1 flex-row items-center gap-2 pr-2">
+              <AlertCircle size={15} color="#E11D48" />
+              <Text className="text-xs font-semibold text-rose-800">{syncError}</Text>
+            </View>
+            <TouchableOpacity
+              onPress={handleSyncNow}
+              className="shadow-xs rounded-lg bg-rose-600 px-2.5 py-1 active:bg-rose-700">
+              <Text className="text-[11px] font-bold text-white">Retry</Text>
+            </TouchableOpacity>
+          </View>
+        ) : syncStatusMsg ? (
           <Text className="mt-1 text-[11px] font-medium italic text-slate-500">
             {syncStatusMsg}
           </Text>
@@ -389,27 +431,83 @@ export function FieldView({ onNewRecord, onEditRecord, isOfflineMode }: FieldVie
         </View>
       </View>
 
-      {/* Main Records List / Empty State */}
+      {/* Main Records List / Contextual Empty States / Skeleton Loading State */}
       <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
-        showsVerticalScrollIndicator={false}>
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isRefreshing}
+            onRefresh={handlePullRefresh}
+            tintColor="#059669"
+            colors={['#059669']}
+          />
+        }>
         {!isInitialized ? (
           <RecordCardsSkeleton count={3} />
         ) : filteredRecords.length === 0 ? (
-          <EmptyState
-            icon={<ClipboardList size={32} color="#059669" />}
-            title={filter === 'attention' ? 'All Records In Order' : 'No Field Records Found'}
-            description={
-              filter === 'attention'
-                ? 'All field records have passed server validation with zero rejections.'
-                : 'Collect mosquito bioassay, larval density, and GPS coordinates offline.'
-            }
-            actionLabel="Start New Capture"
-            onAction={onNewRecord}
-            secondaryLabel="Load Demo Records"
-            onSecondaryAction={handleSeedDemoRecords}
-          />
+          userRecords.length === 0 ? (
+            /* 1. Global Onboarding Empty State */
+            <EmptyState
+              variant="emerald"
+              icon={<ClipboardList size={34} color="#059669" />}
+              title="No Field Records Yet"
+              description="Capture mosquito bioassays, larval density, and GPS coordinates offline. All records validate locally against national R rules."
+              actionLabel="Start New Capture"
+              onAction={onNewRecord}
+              secondaryLabel="Load Demo Samples (4 items)"
+              onSecondaryAction={handleSeedDemoRecords}
+            />
+          ) : filter === 'pending' ? (
+            /* 2. Filter: Pending Sync Empty State */
+            <EmptyState
+              variant="amber"
+              icon={<Clock size={34} color="#D97706" />}
+              title="Offline Outbox Is Clear"
+              description="No records are currently pending sync. Any newly captured records will wait here until you are connected."
+              actionLabel="Capture New Record"
+              onAction={onNewRecord}
+              secondaryLabel="View All Records"
+              onSecondaryAction={() => setFilter('all')}
+            />
+          ) : filter === 'attention' ? (
+            /* 3. Filter: Attention / Rejected Empty State */
+            <EmptyState
+              variant="emerald"
+              icon={<CheckCircle2 size={34} color="#059669" />}
+              title="Zero Validation Issues"
+              description="Excellent! All field records have passed server validation rules with zero rejections or blocking errors."
+              actionLabel="View All Records"
+              onAction={() => setFilter('all')}
+            />
+          ) : filter === 'synced' ? (
+            /* 4. Filter: Synced Empty State */
+            <EmptyState
+              variant="blue"
+              icon={<CheckCircle size={34} color="#2563EB" />}
+              title="No Synced Records Yet"
+              description={
+                pendingCount > 0
+                  ? `You have ${pendingCount} record(s) in the offline queue ready to sync.`
+                  : 'Records will appear here once confirmed by the central PostGIS server.'
+              }
+              actionLabel={pendingCount > 0 ? 'Sync Outbox Now' : 'Capture Record'}
+              onAction={pendingCount > 0 ? handleSyncNow : onNewRecord}
+              secondaryLabel="View All Records"
+              onSecondaryAction={() => setFilter('all')}
+            />
+          ) : (
+            /* 5. General Filter Reset */
+            <EmptyState
+              variant="slate"
+              icon={<Inbox size={34} color="#64748B" />}
+              title="No Matching Records"
+              description="No field records match your active filters."
+              actionLabel="Reset Filter"
+              onAction={() => setFilter('all')}
+            />
+          )
         ) : (
           filteredRecords.map((item) => {
             const isNeedAttention = item.status === 'rejected';

@@ -755,9 +755,12 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
         <TouchableOpacity
           onPress={handleSave}
           disabled={isSubmitting}
-          className="flex-1 items-center rounded-xl bg-primary py-3.5 shadow-sm">
+          className="flex-1 flex-row items-center justify-center rounded-xl bg-primary py-3.5 shadow-sm active:opacity-90">
           {isSubmitting ? (
-            <ActivityIndicator color="#fff" />
+            <View className="flex-row items-center gap-2">
+              <ActivityIndicator color="#FFFFFF" size="small" />
+              <Text className="text-xs font-bold text-white">Validating (R Parity)...</Text>
+            </View>
           ) : (
             <Text className="font-bold text-white">
               {isRejected ? 'Resubmit Record' : 'Save Record (Offline)'}

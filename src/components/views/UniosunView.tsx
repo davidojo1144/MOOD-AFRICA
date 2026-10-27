@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Modal, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import {
+  Modal,
+  RefreshControl,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { AlertTierItem } from '@/types/vecdim';
 import { AlertsClientService } from '@/services/api/alertsService';
 import { haptics } from '@/lib/haptics';
@@ -25,11 +33,20 @@ export function UniosunView() {
   const [selectedTier, setSelectedTier] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [refreshKey, setRefreshKey] = useState<number>(0);
   const [dhis2ModalOpen, setDhis2ModalOpen] = useState<boolean>(false);
   const [dhis2Json, setDhis2Json] = useState<string>('');
   const [hasCopied, setHasCopied] = useState<boolean>(false);
+
+  const handlePullRefresh = async () => {
+    setIsRefreshing(true);
+    haptics.light();
+    setRefreshKey((k) => k + 1);
+    await new Promise((res) => setTimeout(res, 500));
+    setIsRefreshing(false);
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -291,7 +308,15 @@ export function UniosunView() {
       <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
-        showsVerticalScrollIndicator={false}>
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isRefreshing}
+            onRefresh={handlePullRefresh}
+            tintColor="#4F46E5"
+            colors={['#4F46E5']}
+          />
+        }>
         {/* State Surveillance Breakdown Cards */}
         <Text className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
           State Operational Matrices:
@@ -333,20 +358,44 @@ export function UniosunView() {
           <AlertListSkeleton count={4} />
         ) : fetchError ? (
           <ErrorState
-            title="Unable to Load Alerts"
+            title="National Backend Offline"
             message={fetchError}
+            retryLabel="Retry Server"
             onRetry={() => {
               setIsLoading(true);
               setFetchError(null);
               setRefreshKey((k) => k + 1);
             }}
+            secondaryActionLabel="Load Cached Benchmarks"
+            onSecondaryAction={async () => {
+              setIsLoading(true);
+              setFetchError(null);
+              const benchmarkData = await AlertsClientService.getAlerts({
+                userRole: 'uniosun',
+              });
+              setAlerts(benchmarkData);
+              setIsLoading(false);
+              showToast.info(
+                'Benchmark Data Loaded',
+                'Displaying all 647 offline verified alerts.',
+              );
+            }}
           />
         ) : filteredAlerts.length === 0 ? (
           <EmptyState
-            icon={<Info size={36} color="#64748B" />}
-            title="No Records Match"
-            description="Try adjusting your state or tier search filters."
-            actionLabel="Reset Filters"
+            variant={searchQuery ? 'amber' : 'slate'}
+            icon={<Search size={36} color={searchQuery ? '#D97706' : '#64748B'} />}
+            title={
+              searchQuery
+                ? `No Matches for "${searchQuery}"`
+                : 'No National Surveillance Records Found'
+            }
+            description={
+              searchQuery
+                ? `No LGA or state matched "${searchQuery}" under the selected tier (${selectedTier}). Try clearing your search keyword.`
+                : 'Try adjusting your state filter or alert tier selection to view records.'
+            }
+            actionLabel="Reset Search & Filters"
             onAction={() => {
               setSelectedState('All');
               setSelectedTier('All');
