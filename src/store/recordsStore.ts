@@ -18,10 +18,12 @@ interface RecordsState {
   pendingDraftPrompt: Partial<FieldRecord> | null;
   currentUser: UserProfile;
   isInitialized: boolean;
+  isOfflineMode: boolean;
 
   // Actions
   init: () => Promise<void>;
   setCurrentUser: (user: UserProfile) => Promise<void>;
+  toggleOfflineMode: () => void;
   saveDraft: (draft: Partial<FieldRecord>) => Promise<void>;
   discardDraft: () => Promise<void>;
   acceptRestoredDraft: () => void;
@@ -52,6 +54,9 @@ export const useRecordsStore = create<RecordsState>((set, get) => ({
   pendingDraftPrompt: null,
   currentUser: DEMO_USERS[2]!, // Default: Field worker 3 (Osun)
   isInitialized: false,
+  isOfflineMode: false,
+
+  toggleOfflineMode: () => set((state) => ({ isOfflineMode: !state.isOfflineMode })),
 
   init: async () => {
     const [storedRecords, storedDraft, storedUser] = await Promise.all([

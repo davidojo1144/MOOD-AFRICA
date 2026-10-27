@@ -28,6 +28,8 @@ import {
 import { getCurrentGPSLocation, GPS_SIMULATIONS } from '@/services/location/locationService';
 import { generateUUID } from '@/lib/storage';
 import { useRecordsStore } from '@/store/recordsStore';
+import { haptics } from '@/lib/haptics';
+import { showToast } from '@/lib/toast';
 
 interface EntomologyFormProps {
   initialRecord?: FieldRecord | null;
@@ -204,6 +206,7 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
   // Preset GPS simulation triggers
   const applySimulation = (simKey: keyof typeof GPS_SIMULATIONS) => {
     const sim = GPS_SIMULATIONS[simKey];
+    haptics.selection();
     setLatitude(sim.latitude);
     setLongitude(sim.longitude);
     setAccuracy(sim.accuracy);
@@ -212,6 +215,7 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
       setLga('Ife Central');
       setWard('Ife Central Ward 1');
     }
+    showToast.info('GPS Simulation Active', `Accuracy: ±${sim.accuracy}m`);
   };
 
   // Submit Handler
@@ -245,28 +249,30 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
     if (!result.success) {
       setFormErrors(result.errors);
       setFormFlags(result.flags);
+      haptics.error();
+      showToast.error('Validation Blocked', result.errors[0]?.message);
       Alert.alert('Validation Blocked', result.errors.map((e) => `• ${e.message}`).join('\n\n'), [
         { text: 'Review & Fix' },
       ]);
     } else {
       setFormErrors([]);
       setFormFlags(result.flags);
-      if (result.flags.length > 0) {
-        Alert.alert(
-          'Saved with Warnings',
-          `Record saved to offline sync queue with warnings:\n\n${result.flags.map((f) => `• ${f.message}`).join('\n')}`,
-          [{ text: 'OK', onPress: () => onSaved?.(recordToSave) }],
-        );
-      } else {
-        Alert.alert('Saved Offline', 'Record saved to offline sync queue.', [
-          { text: 'OK', onPress: () => onSaved?.(recordToSave) },
-        ]);
-      }
+      haptics.success();
+      showToast.success(
+        'Record Saved Offline',
+        result.flags.length > 0
+          ? 'Saved to outbox with warnings.'
+          : 'Ready in outbox for automatic sync.',
+      );
+      onSaved?.(recordToSave);
     }
   };
 
   return (
-    <ScrollView className="flex-1 bg-background px-4 py-4" keyboardShouldPersistTaps="handled">
+    <ScrollView
+      style={{ flex: 1 }}
+      className="flex-1 bg-background px-4 py-4"
+      keyboardShouldPersistTaps="handled">
       {/* Header Banner */}
       <View className="mb-4 rounded-xl border border-border bg-surface p-4 shadow-sm">
         <View className="flex-row items-center justify-between">

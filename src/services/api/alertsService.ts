@@ -81,7 +81,7 @@ export class AlertsClientService {
           acknowledged: true,
           acknowledged_by: localAck.acknowledged_by,
           acknowledged_at: localAck.acknowledged_at,
-          acknowledgment_notes: localAck.acknowledgment_notes,
+          notes: localAck.acknowledgment_notes,
         };
       }
       return alert;

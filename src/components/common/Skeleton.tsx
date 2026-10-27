@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Animated, View, ViewStyle } from 'react-native';
 
 interface SkeletonProps {
@@ -16,7 +16,7 @@ export function Skeleton({
   style,
   className = '',
 }: SkeletonProps) {
-  const opacity = useRef(new Animated.Value(0.3)).current;
+  const [opacity] = React.useState(() => new Animated.Value(0.3));
 
   useEffect(() => {
     const pulse = Animated.loop(
@@ -61,7 +61,7 @@ export function Skeleton({
 export function StatsCardsSkeleton() {
   return (
     <View className="flex-row gap-2">
-      <View className="flex-1 rounded-2xl border border-slate-200 bg-white p-3 shadow-xs">
+      <View className="shadow-xs flex-1 rounded-2xl border border-slate-200 bg-white p-3">
         <Skeleton width="50%" height={10} borderRadius={4} />
         <View className="mt-2">
           <Skeleton width="40%" height={22} borderRadius={6} />
@@ -71,7 +71,7 @@ export function StatsCardsSkeleton() {
         </View>
       </View>
 
-      <View className="flex-1 rounded-2xl border border-slate-200 bg-white p-3 shadow-xs">
+      <View className="shadow-xs flex-1 rounded-2xl border border-slate-200 bg-white p-3">
         <Skeleton width="60%" height={10} borderRadius={4} />
         <View className="mt-2">
           <Skeleton width="40%" height={22} borderRadius={6} />
@@ -81,7 +81,7 @@ export function StatsCardsSkeleton() {
         </View>
       </View>
 
-      <View className="flex-1 rounded-2xl border border-slate-200 bg-white p-3 shadow-xs">
+      <View className="shadow-xs flex-1 rounded-2xl border border-slate-200 bg-white p-3">
         <Skeleton width="55%" height={10} borderRadius={4} />
         <View className="mt-2">
           <Skeleton width="40%" height={22} borderRadius={6} />
@@ -115,12 +115,10 @@ export function RecordCardsSkeleton({ count = 3 }: { count?: number }) {
   return (
     <View className="gap-3.5">
       {Array.from({ length: count }).map((_, idx) => (
-        <View
-          key={idx}
-          className="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs">
+        <View key={idx} className="shadow-xs rounded-2xl border border-slate-200 bg-white p-4">
           {/* Header row */}
           <View className="flex-row items-center justify-between">
-            <View className="gap-1.5 flex-1 pr-4">
+            <View className="flex-1 gap-1.5 pr-4">
               <Skeleton width="60%" height={15} borderRadius={4} />
               <Skeleton width="40%" height={11} borderRadius={4} />
             </View>
@@ -160,12 +158,10 @@ export function AlertListSkeleton({ count = 4 }: { count?: number }) {
   return (
     <View className="gap-3.5">
       {Array.from({ length: count }).map((_, idx) => (
-        <View
-          key={idx}
-          className="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs">
+        <View key={idx} className="shadow-xs rounded-2xl border border-slate-200 bg-white p-4">
           {/* Header */}
           <View className="flex-row items-center justify-between">
-            <View className="gap-1 flex-1 pr-4">
+            <View className="flex-1 gap-1 pr-4">
               <Skeleton width="55%" height={15} borderRadius={4} />
               <Skeleton width="40%" height={11} borderRadius={4} />
             </View>

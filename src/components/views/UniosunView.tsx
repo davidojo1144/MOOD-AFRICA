@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import {
-  ActivityIndicator,
-  Modal,
-  ScrollView,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Modal, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { AlertTierItem } from '@/types/vecdim';
 import { AlertsClientService } from '@/services/api/alertsService';
+import { haptics } from '@/lib/haptics';
+import { showToast } from '@/lib/toast';
+import { AlertListSkeleton } from '@/components/common/Skeleton';
+import { EmptyState, ErrorState } from '@/components/common/FeedbackStates';
+import {
+  Building2,
+  FileSpreadsheet,
+  Search,
+  Flame,
+  AlertTriangle,
+  Info,
+  MapPin,
+  Copy,
+  Check,
+} from 'lucide-react-native';
+import * as Clipboard from 'expo-clipboard';
 
 export function UniosunView() {
   const [alerts, setAlerts] = useState<AlertTierItem[]>([]);
@@ -17,8 +25,11 @@ export function UniosunView() {
   const [selectedTier, setSelectedTier] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [fetchError, setFetchError] = useState<string | null>(null);
+  const [refreshKey, setRefreshKey] = useState<number>(0);
   const [dhis2ModalOpen, setDhis2ModalOpen] = useState<boolean>(false);
   const [dhis2Json, setDhis2Json] = useState<string>('');
+  const [hasCopied, setHasCopied] = useState<boolean>(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -29,17 +40,21 @@ export function UniosunView() {
         if (isMounted) {
           setAlerts(data);
           setIsLoading(false);
+          setFetchError(null);
         }
       })
       .catch((e) => {
         console.error(e);
-        if (isMounted) setIsLoading(false);
+        if (isMounted) {
+          setFetchError('Unable to load national surveillance alerts.');
+          setIsLoading(false);
+        }
       });
 
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [refreshKey]);
 
   const totalAlert = alerts.filter((a) => a.tier === 'ALERT').length;
   const totalWarning = alerts.filter((a) => a.tier === 'WARNING').length;
@@ -54,6 +69,7 @@ export function UniosunView() {
       alert: stAlerts.filter((a) => a.tier === 'ALERT').length,
       warning: stAlerts.filter((a) => a.tier === 'WARNING').length,
       watch: stAlerts.filter((a) => a.tier === 'WATCH').length,
+      resistant: stAlerts.filter((a) => a.pyrethroid_resistance_flag).length,
     };
   });
 
@@ -71,218 +87,346 @@ export function UniosunView() {
 
   const handleExportDHIS2 = () => {
     const payload = {
-      dataValues: filteredAlerts.slice(0, 15).map((a) => ({
+      dataSet: 'VECDIM_EPIDEMIC_SURVEILLANCE_v1',
+      completeDate: new Date().toISOString().split('T')[0],
+      period: '202610',
+      orgUnit: 'OU_NIGERIA_NATIONAL',
+      metrics: {
+        totalSurveillanceAlerts: alerts.length,
+        epidemicThresholdAlerts: totalAlert,
+        warningAlerts: totalWarning,
+        watchAlerts: totalWatch,
+      },
+      dataValues: filteredAlerts.slice(0, 25).map((a) => ({
         dataElement: 'MALARIA_EARLY_WARNING_TIER',
         period: a.month.replace('-', ''),
-        orgUnit: `NG_${a.state}_${a.lga}`,
+        orgUnit: `NG_${a.state.toUpperCase()}_${a.lga.toUpperCase().replace(/\s+/g, '_')}`,
         value: a.tier,
-        comment: `Risk: ${(a.mean_risk * 100).toFixed(1)}%, Resistance: ${
+        comment: `Model Prob: ${(a.mean_risk * 100).toFixed(1)}%, Resistance: ${
           a.pyrethroid_resistance_flag ? 'Positive' : 'Negative'
         }`,
       })),
     };
     setDhis2Json(JSON.stringify(payload, null, 2));
     setDhis2ModalOpen(true);
+    setHasCopied(false);
+  };
+
+  const handleCopyClipboard = async () => {
+    await Clipboard.setStringAsync(dhis2Json);
+    setHasCopied(true);
+    haptics.success();
+    showToast.success('Payload Copied', 'DHIS2 JSON copied to clipboard.');
+    setTimeout(() => setHasCopied(false), 2000);
   };
 
   return (
-    <View className="flex-1 bg-background">
-      {/* Top Banner */}
-      <View className="border-b border-border bg-surface px-4 py-3">
+    <View style={{ flex: 1 }} className="flex-1 bg-slate-50">
+      {/* Top Header */}
+      <View className="shadow-xs border-b border-slate-200 bg-white px-4 pb-3 pt-3.5">
         <View className="flex-row items-center justify-between">
           <View>
-            <Text className="text-base font-bold text-foreground">
-              UNIOSUN National Surveillance
+            <View className="flex-row items-center gap-1.5">
+              <Building2 size={18} color="#4F46E5" />
+              <Text className="text-lg font-black tracking-tight text-slate-900">
+                UNIOSUN National Surveillance
+              </Text>
+            </View>
+            <Text className="mt-0.5 text-xs font-semibold text-slate-500">
+              Epidemic Decision Support • Geosmart Nigeria
             </Text>
-            <Text className="text-xs text-muted">National Decision Support & EWS • All States</Text>
           </View>
 
+          {/* Export DHIS2 Button */}
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={handleExportDHIS2}
-            className="rounded-lg bg-secondary px-3 py-1.5 shadow-sm">
-            <Text className="text-xs font-bold text-white">DHIS2 Export</Text>
+            className="flex-row items-center rounded-xl bg-indigo-600 px-3.5 py-2 shadow-sm">
+            <FileSpreadsheet size={14} color="#FFFFFF" />
+            <Text className="ml-1.5 text-xs font-bold text-white">DHIS2 Export</Text>
           </TouchableOpacity>
         </View>
 
-        {/* National Benchmark Counters (Exactly matching R output: 86 / 135 / 426 = 647) */}
+        {/* National Benchmark Matrix (86 ALERT / 135 WARNING / 426 WATCH = 647) */}
         <View className="mt-3 flex-row gap-2">
+          {/* ALERT */}
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => setSelectedTier(selectedTier === 'ALERT' ? 'All' : 'ALERT')}
-            className={`flex-1 rounded-xl border p-2.5 ${
+            className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'ALERT'
-                ? 'border-rose-400 bg-rose-100'
-                : 'border-rose-200 bg-rose-50'
+                ? 'border-rose-400 bg-rose-500 text-white'
+                : 'border-rose-200 bg-rose-50/70'
             }`}>
-            <Text className="text-[10px] font-bold uppercase tracking-wider text-rose-800">
-              ALERT
+            <View className="flex-row items-center justify-between">
+              <Text
+                className={`text-[10px] font-black uppercase tracking-wider ${
+                  selectedTier === 'ALERT' ? 'text-white' : 'text-rose-800'
+                }`}>
+                ALERT
+              </Text>
+              <Flame size={14} color={selectedTier === 'ALERT' ? '#FFFFFF' : '#E11D48'} />
+            </View>
+            <Text
+              className={`mt-1 text-xl font-black ${
+                selectedTier === 'ALERT' ? 'text-white' : 'text-rose-950'
+              }`}>
+              {totalAlert}
             </Text>
-            <Text className="text-xl font-extrabold text-rose-950">{totalAlert}</Text>
-            <Text className="text-[10px] text-rose-700">R Benchmark: 86</Text>
+            <Text
+              className={`text-[9px] font-bold ${
+                selectedTier === 'ALERT' ? 'text-rose-100' : 'text-rose-600'
+              }`}>
+              R Benchmark: 86
+            </Text>
           </TouchableOpacity>
 
+          {/* WARNING */}
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => setSelectedTier(selectedTier === 'WARNING' ? 'All' : 'WARNING')}
-            className={`flex-1 rounded-xl border p-2.5 ${
+            className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WARNING'
-                ? 'border-amber-400 bg-amber-100'
-                : 'border-amber-200 bg-amber-50'
+                ? 'border-amber-400 bg-amber-500 text-white'
+                : 'border-amber-200 bg-amber-50/70'
             }`}>
-            <Text className="text-[10px] font-bold uppercase tracking-wider text-amber-800">
-              WARNING
+            <View className="flex-row items-center justify-between">
+              <Text
+                className={`text-[10px] font-black uppercase tracking-wider ${
+                  selectedTier === 'WARNING' ? 'text-white' : 'text-amber-800'
+                }`}>
+                WARNING
+              </Text>
+              <AlertTriangle size={14} color={selectedTier === 'WARNING' ? '#FFFFFF' : '#D97706'} />
+            </View>
+            <Text
+              className={`mt-1 text-xl font-black ${
+                selectedTier === 'WARNING' ? 'text-white' : 'text-amber-950'
+              }`}>
+              {totalWarning}
             </Text>
-            <Text className="text-xl font-extrabold text-amber-950">{totalWarning}</Text>
-            <Text className="text-[10px] text-amber-700">R Benchmark: 135</Text>
+            <Text
+              className={`text-[9px] font-bold ${
+                selectedTier === 'WARNING' ? 'text-amber-100' : 'text-amber-600'
+              }`}>
+              R Benchmark: 135
+            </Text>
           </TouchableOpacity>
 
+          {/* WATCH */}
           <TouchableOpacity
+            activeOpacity={0.8}
             onPress={() => setSelectedTier(selectedTier === 'WATCH' ? 'All' : 'WATCH')}
-            className={`flex-1 rounded-xl border p-2.5 ${
+            className={`shadow-xs flex-1 rounded-2xl border p-2.5 ${
               selectedTier === 'WATCH'
-                ? 'border-blue-400 bg-blue-100'
-                : 'border-blue-200 bg-blue-50'
+                ? 'border-blue-400 bg-blue-500 text-white'
+                : 'border-blue-200 bg-blue-50/70'
             }`}>
-            <Text className="text-[10px] font-bold uppercase tracking-wider text-blue-800">
-              WATCH
+            <View className="flex-row items-center justify-between">
+              <Text
+                className={`text-[10px] font-black uppercase tracking-wider ${
+                  selectedTier === 'WATCH' ? 'text-white' : 'text-blue-800'
+                }`}>
+                WATCH
+              </Text>
+              <Info size={14} color={selectedTier === 'WATCH' ? '#FFFFFF' : '#2563EB'} />
+            </View>
+            <Text
+              className={`mt-1 text-xl font-black ${
+                selectedTier === 'WATCH' ? 'text-white' : 'text-blue-950'
+              }`}>
+              {totalWatch}
             </Text>
-            <Text className="text-xl font-extrabold text-blue-950">{totalWatch}</Text>
-            <Text className="text-[10px] text-blue-700">R Benchmark: 426</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => {
-              setSelectedTier('All');
-              setSelectedState('All');
-            }}
-            className={`flex-1 rounded-xl border p-2.5 ${
-              selectedTier === 'All' && selectedState === 'All'
-                ? 'border-purple-400 bg-purple-100'
-                : 'border-purple-200 bg-purple-50'
-            }`}>
-            <Text className="text-[10px] font-bold uppercase tracking-wider text-purple-800">
-              TOTAL
+            <Text
+              className={`text-[9px] font-bold ${
+                selectedTier === 'WATCH' ? 'text-blue-100' : 'text-blue-600'
+              }`}>
+              R Benchmark: 426
             </Text>
-            <Text className="text-xl font-extrabold text-purple-950">{alerts.length}</Text>
-            <Text className="text-[10px] text-purple-700">Target: 647</Text>
           </TouchableOpacity>
         </View>
 
-        {/* State Breakdown Bar */}
-        <View className="mt-3 flex-row gap-2">
+        {/* Search Bar */}
+        <View className="mt-3 flex-row items-center rounded-xl border border-slate-200 bg-slate-100/70 px-3 py-1.5">
+          <Search size={14} color="#64748B" />
+          <TextInput
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            placeholder="Search state, LGA, or month (e.g. Osogbo, 2026-03)..."
+            placeholderTextColor="#94A3B8"
+            className="ml-2 flex-1 py-1 text-xs text-slate-800"
+          />
+          {searchQuery.length > 0 && (
+            <TouchableOpacity onPress={() => setSearchQuery('')}>
+              <Text className="text-xs font-bold text-slate-400">Clear</Text>
+            </TouchableOpacity>
+          )}
+        </View>
+
+        {/* State Filter Pills */}
+        <View className="mt-2.5 flex-row gap-1.5">
+          {['All', 'Osun', 'Lagos', 'Kano'].map((st) => {
+            const isSelected = selectedState === st;
+            return (
+              <TouchableOpacity
+                key={st}
+                activeOpacity={0.7}
+                onPress={() => setSelectedState(st)}
+                className={`rounded-full border px-3 py-1 ${
+                  isSelected
+                    ? 'shadow-xs border-indigo-600 bg-indigo-600'
+                    : 'border-slate-200 bg-white'
+                }`}>
+                <Text
+                  className={`text-xs font-bold ${isSelected ? 'text-white' : 'text-slate-600'}`}>
+                  {st === 'All' ? 'All States (647)' : st}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      </View>
+
+      {/* Main Alert Feed & State Summaries */}
+      <ScrollView
+        style={{ flex: 1 }}
+        contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
+        showsVerticalScrollIndicator={false}>
+        {/* State Surveillance Breakdown Cards */}
+        <Text className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
+          State Operational Matrices:
+        </Text>
+        <View className="mb-4 flex-row gap-2.5">
           {stateBreakdown.map((sb) => (
             <TouchableOpacity
               key={sb.state}
+              activeOpacity={0.8}
               onPress={() => setSelectedState(selectedState === sb.state ? 'All' : sb.state)}
-              className={`flex-1 rounded-lg border p-2 ${
+              className={`shadow-xs flex-1 rounded-2xl border bg-white p-3 ${
                 selectedState === sb.state
-                  ? 'border-primary bg-primary-50'
-                  : 'border-border bg-background'
+                  ? 'border-indigo-500 bg-indigo-50/20'
+                  : 'border-slate-200'
               }`}>
-              <Text className="text-xs font-bold text-foreground">{sb.state}</Text>
-              <Text className="text-[10px] text-muted">
-                {sb.alert} Alert • {sb.warning} Warn
-              </Text>
+              <Text className="text-xs font-black text-slate-900">{sb.state}</Text>
+              <Text className="text-[10px] font-medium text-slate-500">{sb.total} alerts</Text>
+              <View className="mt-2 flex-row gap-1">
+                <View className="py-0.2 rounded bg-rose-100 px-1">
+                  <Text className="text-[9px] font-extrabold text-rose-800">{sb.alert}</Text>
+                </View>
+                <View className="py-0.2 rounded bg-amber-100 px-1">
+                  <Text className="text-[9px] font-extrabold text-amber-800">{sb.warning}</Text>
+                </View>
+                <View className="py-0.2 rounded bg-blue-100 px-1">
+                  <Text className="text-[9px] font-extrabold text-blue-800">{sb.watch}</Text>
+                </View>
+              </View>
             </TouchableOpacity>
           ))}
         </View>
 
-        {/* Search input */}
-        <TextInput
-          value={searchQuery}
-          onChangeText={setSearchQuery}
-          placeholder="Filter by LGA, state, or month (e.g. 2026-06)..."
-          className="mt-3 rounded-lg border border-border bg-background px-3 py-2 text-xs text-foreground"
-        />
-      </View>
+        {/* Filtered Alert Item List */}
+        <Text className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
+          Surveillance Alert Records ({filteredAlerts.length}):
+        </Text>
 
-      {/* Alert Feed */}
-      <ScrollView className="flex-1 p-4">
         {isLoading ? (
-          <View className="items-center justify-center py-12">
-            <ActivityIndicator size="large" color="#E2582B" />
-            <Text className="mt-2 text-xs text-muted">Loading national alerts...</Text>
-          </View>
+          <AlertListSkeleton count={4} />
+        ) : fetchError ? (
+          <ErrorState
+            title="Unable to Load Alerts"
+            message={fetchError}
+            onRetry={() => {
+              setIsLoading(true);
+              setFetchError(null);
+              setRefreshKey((k) => k + 1);
+            }}
+          />
         ) : filteredAlerts.length === 0 ? (
-          <View className="items-center justify-center rounded-2xl border border-dashed border-border bg-surface p-8">
-            <Text className="text-2xl">📋</Text>
-            <Text className="mt-2 font-bold text-foreground">No records matched</Text>
-          </View>
+          <EmptyState
+            icon={<Info size={36} color="#64748B" />}
+            title="No Records Match"
+            description="Try adjusting your state or tier search filters."
+            actionLabel="Reset Filters"
+            onAction={() => {
+              setSelectedState('All');
+              setSelectedTier('All');
+              setSearchQuery('');
+            }}
+          />
         ) : (
-          filteredAlerts.map((item) => {
+          filteredAlerts.slice(0, 100).map((item) => {
             const isAlert = item.tier === 'ALERT';
             const isWarning = item.tier === 'WARNING';
-
-            const tierBg = isAlert
-              ? 'border-rose-300 bg-rose-50/50'
-              : isWarning
-                ? 'border-amber-300 bg-amber-50/50'
-                : 'border-blue-200 bg-blue-50/30';
-
-            const tierBadge = isAlert
-              ? 'bg-rose-100 text-rose-800 border-rose-200'
-              : isWarning
-                ? 'bg-amber-100 text-amber-800 border-amber-200'
-                : 'bg-blue-100 text-blue-800 border-blue-200';
+            const riskColor = isAlert ? '#E11D48' : isWarning ? '#D97706' : '#2563EB';
 
             return (
               <View
                 key={item.id}
-                className={`mb-3 rounded-2xl border bg-surface p-4 shadow-sm ${tierBg}`}>
+                className={`shadow-xs mb-3 rounded-2xl border bg-white p-3.5 ${
+                  isAlert ? 'border-rose-200' : isWarning ? 'border-amber-200' : 'border-slate-200'
+                }`}>
                 <View className="flex-row items-start justify-between">
-                  <View>
+                  <View className="flex-1 pr-2">
                     <View className="flex-row items-center gap-1.5">
-                      <Text className="text-base font-bold text-foreground">{item.lga}</Text>
-                      <Text className="text-xs text-muted">({item.state})</Text>
+                      <MapPin size={13} color={riskColor} />
+                      <Text className="text-sm font-extrabold text-slate-900">
+                        {item.lga} LGA • {item.state} State
+                      </Text>
                     </View>
-                    <Text className="text-xs text-muted">
-                      Month: {item.month} • {item.n_records} survey records
+                    <Text className="mt-0.5 text-xs font-medium text-slate-500">
+                      Period: {item.month} • ID: {item.id}
                     </Text>
                   </View>
 
-                  <View className={`rounded-full border px-2.5 py-0.5 ${tierBadge}`}>
-                    <Text className="text-[10px] font-bold uppercase">{item.tier}</Text>
+                  <View
+                    className={`rounded-full border px-2.5 py-0.5 ${
+                      isAlert
+                        ? 'border-rose-300 bg-rose-50'
+                        : isWarning
+                          ? 'border-amber-300 bg-amber-50'
+                          : 'border-blue-300 bg-blue-50'
+                    }`}>
+                    <Text
+                      className={`text-[10px] font-black uppercase ${
+                        isAlert ? 'text-rose-700' : isWarning ? 'text-amber-700' : 'text-blue-700'
+                      }`}>
+                      {item.tier}
+                    </Text>
                   </View>
                 </View>
 
-                {/* Score & Pyrethroid Flag */}
-                <View className="mt-2.5 flex-row items-center justify-between rounded-xl border border-border bg-background p-2.5">
+                {/* Metrics */}
+                <View className="mt-2.5 flex-row items-center justify-between rounded-xl bg-slate-50 p-2.5">
                   <View>
-                    <Text className="text-[10px] font-bold uppercase text-muted">
-                      Mean Predicted Risk
-                    </Text>
-                    <Text className="text-base font-bold text-foreground">
+                    <Text className="text-[10px] font-bold text-slate-500">Predicted Risk</Text>
+                    <Text className="text-sm font-black text-slate-900">
                       {(item.mean_risk * 100).toFixed(1)}%
                     </Text>
                   </View>
 
-                  <View className="items-end">
-                    <Text className="text-[10px] font-bold uppercase text-muted">
-                      Pyrethroid Resistance
-                    </Text>
-                    <View
-                      className={`mt-0.5 rounded border px-2 py-0.5 ${
-                        item.pyrethroid_resistance_flag
-                          ? 'border-rose-300 bg-rose-100'
-                          : 'border-emerald-300 bg-emerald-100'
+                  <View
+                    className={`rounded-lg px-2 py-1 ${
+                      item.pyrethroid_resistance_flag ? 'bg-purple-100' : 'bg-slate-200/60'
+                    }`}>
+                    <Text
+                      className={`text-[10px] font-bold ${
+                        item.pyrethroid_resistance_flag ? 'text-purple-800' : 'text-slate-600'
                       }`}>
-                      <Text
-                        className={`text-[10px] font-bold ${
-                          item.pyrethroid_resistance_flag ? 'text-rose-800' : 'text-emerald-800'
-                        }`}>
-                        {item.pyrethroid_resistance_flag ? 'Flagged' : 'Susceptible'}
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-
-                <View className="mt-2 flex-row justify-between text-[11px]">
-                  <Text className="font-mono text-[11px] text-muted">{item.id}</Text>
-                  {item.acknowledged ? (
-                    <Text className="text-[11px] font-bold text-emerald-700">
-                      ✓ Acknowledged ({item.acknowledged_by})
+                      {item.pyrethroid_resistance_flag
+                        ? 'Pyrethroid Resistant (<90%)'
+                        : 'Susceptible'}
                     </Text>
-                  ) : (
-                    <Text className="text-[11px] italic text-muted">Pending Review</Text>
-                  )}
+                  </View>
+
+                  <View className="items-end">
+                    <Text className="text-[10px] font-bold text-slate-500">Status</Text>
+                    <Text
+                      className={`text-[11px] font-bold ${
+                        item.acknowledged ? 'text-emerald-700' : 'text-slate-400'
+                      }`}>
+                      {item.acknowledged ? '✓ Logged' : 'Unacknowledged'}
+                    </Text>
+                  </View>
                 </View>
               </View>
             );
@@ -292,22 +436,50 @@ export function UniosunView() {
 
       {/* DHIS2 Export Modal */}
       <Modal visible={dhis2ModalOpen} transparent animationType="fade">
-        <View className="flex-1 items-center justify-center bg-black/60 px-6">
-          <View className="max-h-[80%] w-full max-w-md rounded-2xl border border-border bg-surface p-5 shadow-xl">
-            <Text className="text-base font-bold text-foreground">DHIS2 dataValueSets Export</Text>
-            <Text className="mt-1 text-xs text-muted">
-              Standard DHIS2 surveillance integration payload
-            </Text>
+        <View className="flex-1 items-center justify-center bg-slate-950/70 px-4">
+          <View
+            style={{ maxHeight: '85%' }}
+            className="w-full max-w-lg rounded-3xl border border-slate-200 bg-white p-5 shadow-2xl">
+            <View className="flex-row items-center justify-between border-b border-slate-100 pb-3">
+              <View className="flex-row items-center gap-2">
+                <FileSpreadsheet size={20} color="#4F46E5" />
+                <View>
+                  <Text className="text-base font-black text-slate-900">
+                    DHIS2 Aggregate Data Payload
+                  </Text>
+                  <Text className="text-[11px] text-slate-500">
+                    National HMIS / Federal Ministry of Health Export
+                  </Text>
+                </View>
+              </View>
 
-            <ScrollView className="mt-3 max-h-80 rounded-xl border border-border bg-background p-3">
-              <Text className="font-mono text-xs text-foreground">{dhis2Json}</Text>
+              <TouchableOpacity
+                onPress={handleCopyClipboard}
+                className="flex-row items-center rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-1.5">
+                {hasCopied ? (
+                  <Check size={13} color="#4F46E5" />
+                ) : (
+                  <Copy size={13} color="#4F46E5" />
+                )}
+                <Text className="ml-1 text-xs font-bold text-indigo-700">
+                  {hasCopied ? 'Copied!' : 'Copy'}
+                </Text>
+              </TouchableOpacity>
+            </View>
+
+            <ScrollView className="mt-3 rounded-2xl bg-slate-900 p-3.5">
+              <Text className="font-mono text-[11px] leading-relaxed text-emerald-400">
+                {dhis2Json}
+              </Text>
             </ScrollView>
 
-            <TouchableOpacity
-              onPress={() => setDhis2ModalOpen(false)}
-              className="mt-4 items-center rounded-xl bg-primary py-2.5">
-              <Text className="text-xs font-bold text-white">Close</Text>
-            </TouchableOpacity>
+            <View className="mt-4 flex-row gap-2">
+              <TouchableOpacity
+                onPress={() => setDhis2ModalOpen(false)}
+                className="flex-1 items-center rounded-xl bg-slate-900 py-3">
+                <Text className="text-xs font-bold text-white">Close</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </Modal>
