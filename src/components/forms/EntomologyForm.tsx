@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
-  Alert,
   ScrollView,
   Text,
   TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
+import { CustomModal } from '@/components/common/CustomModal';
 import {
   FieldRecord,
   InsecticideName,
@@ -87,6 +87,8 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
     initialRecord?.server_flags ?? [],
   );
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [isValidationModalOpen, setIsValidationModalOpen] = useState<boolean>(false);
+  const [isDiscardModalOpen, setIsDiscardModalOpen] = useState<boolean>(false);
 
   // Autosave timer debounce
   const autosaveTimerRef = useRef<NodeJS.Timeout | null>(null);
@@ -251,9 +253,7 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
       setFormFlags(result.flags);
       haptics.error();
       showToast.error('Validation Blocked', result.errors[0]?.message);
-      Alert.alert('Validation Blocked', result.errors.map((e) => `• ${e.message}`).join('\n\n'), [
-        { text: 'Review & Fix' },
-      ]);
+      setIsValidationModalOpen(true);
     } else {
       setFormErrors([]);
       setFormFlags(result.flags);
@@ -746,7 +746,7 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
       {/* Action Buttons */}
       <View className="mb-10 flex-row gap-3">
         <TouchableOpacity
-          onPress={onCancel ?? discardDraft}
+          onPress={() => setIsDiscardModalOpen(true)}
           disabled={isSubmitting}
           className="flex-1 items-center rounded-xl border border-border bg-surface py-3.5">
           <Text className="font-semibold text-muted">Cancel / Discard</Text>
@@ -768,6 +768,44 @@ export function EntomologyForm({ initialRecord, onSaved, onCancel }: EntomologyF
           )}
         </TouchableOpacity>
       </View>
+
+      {/* Custom Validation Blocked Modal */}
+      <CustomModal
+        visible={isValidationModalOpen}
+        onClose={() => setIsValidationModalOpen(false)}
+        type="danger"
+        title="Validation Blocked"
+        message="This record failed national R pipeline validation rules and cannot be stored until corrected:"
+        items={formErrors.map((e) => ({
+          field: e.field,
+          message: e.message,
+        }))}
+        primaryAction={{
+          label: 'Review & Fix',
+          onPress: () => setIsValidationModalOpen(false),
+        }}
+      />
+
+      {/* Custom Discard Confirmation Modal */}
+      <CustomModal
+        visible={isDiscardModalOpen}
+        onClose={() => setIsDiscardModalOpen(false)}
+        type="warning"
+        title="Discard Field Form?"
+        message="Are you sure you want to close this form? Any uncommitted data entry will be discarded."
+        secondaryAction={{
+          label: 'Keep Editing',
+          onPress: () => setIsDiscardModalOpen(false),
+        }}
+        primaryAction={{
+          label: 'Discard Form',
+          onPress: async () => {
+            setIsDiscardModalOpen(false);
+            await discardDraft();
+            onCancel?.();
+          },
+        }}
+      />
     </ScrollView>
   );
 }
