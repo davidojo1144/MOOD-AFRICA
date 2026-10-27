@@ -48,6 +48,7 @@
     "zustand": "^5.0.16"
   },
   "devDependencies": {
+    "@types/node": "^26.6.5",
     "@types/react": "~19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~58.0.4",
@@ -55,6 +56,7 @@
     "eslint-plugin-prettier": "^5.5.7",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.6",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -70,7 +72,10 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
-    "doctor": "expo-doctor"
+    "doctor": "expo-doctor",
+    "test": "tsx scripts/run_unit_tests.ts && tsx scripts/run_parity_test.ts",
+    "test:unit": "tsx scripts/run_unit_tests.ts",
+    "test:parity": "tsx scripts/run_parity_test.ts"
   },
   "private": true
 }

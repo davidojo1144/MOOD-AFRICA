@@ -1,0 +1,26 @@
+=====================================================
+ VECDIM VALIDATION ENGINE PARITY TEST REPORT
+ Timestamp: 2026-10-27T03:37:27.623Z
+ Benchmark records tested: 1525
+ Reference date: 2026-10-08
+=====================================================
+
+
+RULE PARITY BREAKDOWN:
+-----------------------------------------------------
+GPS_outside_nigeria      : 1525 matched, 0 mismatches (100.00%)
+GPS_zero_zero            : 1525 matched, 0 mismatches (100.00%)
+GPS_state_mismatch       : 1525 matched, 0 mismatches (100.00%)
+GPS_far_from_lga         : 1525 matched, 0 mismatches (100.00%)
+n_dead_gt_n_exposed      : 1525 matched, 0 mismatches (100.00%)
+positivity_out_range     : 1525 matched, 0 mismatches (100.00%)
+future_date              : 1525 matched, 0 mismatches (100.00%)
+temp_implausible         : 1525 matched, 0 mismatches (100.00%)
+rainfall_implausible     : 1525 matched, 0 mismatches (100.00%)
+duplicate                : 1525 matched, 0 mismatches (100.00%)
+missing_core             : 1525 matched, 0 mismatches (100.00%)
+any_flag                 : 1525 matched, 0 mismatches (100.00%)
+-----------------------------------------------------
+TOTAL COMPARISONS : 18300
+TOTAL MISMATCHES  : 0
+OVERALL PARITY    : 100.0000%
