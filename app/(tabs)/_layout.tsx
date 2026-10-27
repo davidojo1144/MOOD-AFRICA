@@ -18,11 +18,11 @@ export default function TabLayout() {
       screenOptions={{
         header: () => (
           <SafeAreaView style={{ backgroundColor: '#FFFFFF' }} edges={['top']}>
-            <View className="shadow-xs border-b border-slate-200 bg-white px-4 py-3">
+            <View className="border-b border-slate-200 bg-white px-4 py-3">
               <View className="flex-row items-center justify-between">
                 {/* Logo & Lab Branding */}
                 <View className="flex-row items-center gap-2">
-                  <View className="h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 shadow-sm">
+                  <View className="h-8 w-8 items-center justify-center rounded-xl bg-emerald-600">
                     <Activity size={18} color="#FFFFFF" strokeWidth={2.5} />
                   </View>
                   <View>

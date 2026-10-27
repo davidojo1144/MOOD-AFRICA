@@ -62,11 +62,13 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.7",
     "prettier": "^3.9.10",
+    "patch-package": "^8.0.0",
     "prettier-plugin-tailwindcss": "^0.6",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3"
   },
   "scripts": {
+    "postinstall": "patch-package",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",

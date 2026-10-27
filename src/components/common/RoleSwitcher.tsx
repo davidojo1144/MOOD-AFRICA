@@ -63,7 +63,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitche
           <TouchableOpacity
             activeOpacity={0.8}
             onPress={onToggleOfflineMode}
-            className={`flex-row items-center rounded-full border px-2.5 py-1.5 shadow-sm ${
+            className={`flex-row items-center rounded-full border px-2.5 py-1.5 ${
               isOfflineMode ? 'border-amber-400 bg-amber-50' : 'border-emerald-300 bg-emerald-50'
             }`}>
             {isOfflineMode ? (
@@ -84,7 +84,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitche
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => setModalVisible(true)}
-          className={`flex-row items-center rounded-full border px-2.5 py-1.5 shadow-sm ${currentTheme.bg} ${currentTheme.border}`}>
+          className={`flex-row items-center rounded-full border px-2.5 py-1.5 ${currentTheme.bg} ${currentTheme.border}`}>
           <View className="mr-1.5 h-5 w-5 items-center justify-center rounded-full bg-slate-900">
             <Text className="text-[10px] font-extrabold text-white">
               {currentUser.name
@@ -116,7 +116,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitche
           className="flex-1 items-center justify-center px-4">
           <View
             style={{ maxHeight: '85%' }}
-            className="w-full max-w-md overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
+            className="w-full max-w-md overflow-hidden rounded-3xl border border-slate-200 bg-white">
             {/* Modal Header */}
             <View className="border-b border-slate-100 bg-slate-50 px-6 py-4">
               <View className="flex-row items-center justify-between">
@@ -151,7 +151,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitche
                       }}
                       className={`flex-row items-center justify-between rounded-2xl border p-3.5 ${
                         isSelected
-                          ? 'border-emerald-500 bg-emerald-50 shadow-sm'
+                          ? 'border-emerald-500 bg-emerald-50'
                           : 'border-slate-200 bg-white'
                       }`}>
                       <View className="flex-1 flex-row items-center pr-2">
@@ -203,7 +203,7 @@ export function RoleSwitcher({ isOfflineMode, onToggleOfflineMode }: RoleSwitche
             <View className="border-t border-slate-100 bg-slate-50 px-5 py-3">
               <TouchableOpacity
                 onPress={() => setModalVisible(false)}
-                className="items-center rounded-xl bg-slate-900 py-3 shadow-sm">
+                className="items-center rounded-xl bg-slate-900 py-3">
                 <Text className="text-xs font-bold text-white">Done</Text>
               </TouchableOpacity>
             </View>
